@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.cactus.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_vocabularyNoteFragment"
+            app:destination="@id/vocabularyNoteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_grammarFragment"
+            app:destination="@id/grammarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tranlateFragment"
+            app:destination="@id/tranlateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/grammarFragment"
+        android:name="com.example.cactus.GrammarFragment"
+        android:label="fragment_grammar"
+        tools:layout="@layout/fragment_grammar" />
+    <fragment
+        android:id="@+id/tranlateFragment"
+        android:name="com.example.cactus.TranlateFragment"
+        android:label="fragment_tranlate"
+        tools:layout="@layout/fragment_tranlate" />
+    <fragment
+        android:id="@+id/vocabularyNoteFragment"
+        android:name="com.example.cactus.VocabularyNoteFragment"
+        android:label="fragment_vocabulary_note"
+        tools:layout="@layout/fragment_vocabulary_note" />
+</navigation>

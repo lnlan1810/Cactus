@@ -1,2 +1,0 @@
-# Cactus
-Russian learning apps

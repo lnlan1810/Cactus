@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Cactus</string>
+    <string name="belajar_seru">Belajar seru dengan aplikasi!</string>
+    <string name="bebanggis_developer">Developers</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="learn">Learn Russian with Cactus!</string>
+    <string name="slogan">Every cactus blooms</string>
+    <string name="basic">Basic lession</string>
+    <string name="handwriting">Handwriting</string>
+    <string name="num">Numbers</string>
+    <string name="day">Days and months</string>
+    <string name="nouns">Nouns</string>
+    <string name="verbs">Verbs</string>
+    <string name="adj">Adjectives</string>
+
+    <string name="rate">5 star rating</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="common">Common Words</string>
+    <string name="conver">Conversation</string>
+    <string name="voca">Vocabulary topics</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
