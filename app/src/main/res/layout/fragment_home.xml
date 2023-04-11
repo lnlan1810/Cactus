@@ -3,15 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/homeF">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:padding="16dp"
-        tools:context=".HomeFragment">
+        tools:context=".homeScreen.presentation.fragment.HomeFragment">
 
         <ImageView
             android:id="@+id/imageView4"
@@ -86,27 +88,26 @@
             android:layout_width="wrap_content"
             android:paddingRight="10dp"
             android:paddingLeft="10dp"
-            android:layout_height="36dp"
-            android:layout_marginTop="48dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="46dp"
             android:background="@drawable/buttongray"
             android:clickable="false"
             android:fontFamily="@font/berlinlight"
             android:text="@string/basic"
             android:textAllCaps="false"
-            android:textSize="22sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
             tools:layout_editor_absoluteX="1dp" />
 
         <ImageView
             android:id="@+id/buttonlearn"
-            android:layout_width="360dp"
-            android:layout_height="164dp"
-            android:layout_marginStart="13dp"
+            android:layout_width="352dp"
+            android:layout_height="158dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="24dp"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-
             android:src="@drawable/handd"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -133,14 +134,14 @@
                     android:layout_width="wrap_content"
                     android:paddingRight="10dp"
                     android:paddingLeft="10dp"
-                    android:layout_height="36dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="22dp"
                     android:background="@drawable/buttongray"
                     android:clickable="false"
                     android:fontFamily="@font/berlinlight"
                     android:text="@string/common"
                     android:textAllCaps="false"
-                    android:textSize="22sp"
+                    android:textSize="20sp"
 
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/buttoncommon" />
@@ -168,8 +169,8 @@
                 <Button
 
                     android:layout_width="wrap_content"
-                    android:layout_height="36dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="22dp"
                     android:background="@drawable/buttongray"
                     android:clickable="false"
                     android:fontFamily="@font/berlinlight"
@@ -179,12 +180,12 @@
 
                     android:textAllCaps="false"
 
-                    android:textSize="22sp"
+                    android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/buttonabout" />
+                    app:layout_constraintTop_toTopOf="@+id/buttoconver" />
 
                 <ImageView
-                    android:id="@+id/buttonabout"
+                    android:id="@+id/buttoconver"
                     android:layout_width="wrap_content"
                     android:layout_height="164dp"
                     android:layout_marginStart="8dp"
@@ -202,8 +203,8 @@
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:layout_marginTop="24dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="22dp"
             android:background="@drawable/buttongray"
             android:clickable="false"
             android:fontFamily="@font/berlinlight"
@@ -212,15 +213,15 @@
             android:text="@string/voca"
             android:textAllCaps="false"
 
-            android:textSize="22sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
+            app:layout_constraintTop_toTopOf="@+id/iv_topic" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="360dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="13dp"
+            android:id="@+id/iv_topic"
+            android:layout_width="353dp"
+            android:layout_height="159dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="32dp"
             android:adjustViewBounds="true"

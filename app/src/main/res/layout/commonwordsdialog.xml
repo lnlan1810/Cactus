@@ -83,7 +83,7 @@
         android:paddingRight="5dp"
         android:text="@string/common"
         android:textAllCaps="false"
-        android:textSize="22sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="@+id/cardView3"
         app:layout_constraintTop_toTopOf="@+id/cardView3"

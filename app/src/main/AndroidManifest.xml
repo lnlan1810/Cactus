@@ -1,29 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.cactus">
+    package="com.example.android.cactus">
 
-    <uses-permission android:name="com.example.cactus.BILLING"/>
+    <uses-permission android:name="com.example.cactus.BILLING" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
+        android:name="com.example.android.cactus.vocabularyNotebook.VocApplication"
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_dictionary"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_dictionary_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Cactus"
-        tools:targetApi="31">
+        android:theme="@style/Theme.VocabularyApp">
+
+        <activity android:name="com.example.android.cactus.vocabularyNotebook.ui.learn.LearnActivity" />
+        <activity android:name="com.example.android.cactus.vocabularyNotebook.ui.addWord.AddWordActivity" />
+
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.android.cactus.vocabularyNotebook.ui.words.WordsActivity"
+            android:parentActivityName="com.example.android.cactus.vocabularyNotebook.ui.category.CategoryActivity"
+            />
+
+        <activity android:name="com.example.android.cactus.vocabularyNotebook.ui.category.CategoryActivity"
             android:exported="true">
+        </activity>
+
+        <activity
+            android:name="com.example.android.cactus.MainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.example.android.cactus.vocabularyNotebook.VocApplication" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver
+            android:name="com.example.android.cactus.vocabularyNotebook.utils.MemoBroadcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".homeScreen.presentation.service.ConversationService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
     </application>
 
 </manifest>

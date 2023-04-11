@@ -25,7 +25,7 @@
     <color name="abuabu">#747474</color>
     <color name="putihkotor">#9A9A9A</color>
 
-    <color name="hijau">#00FF37</color>
+    <color name="xanh">#1C6E2D</color>
     <color name="hijautua">#005112</color>
     <color name="hijaumuda">#72FF90</color>
     <color name="greenn">#9DEDA0</color>
@@ -57,6 +57,14 @@
     <color name="ig">#f3e3fe</color>
 
     <color name="textgreen">#60e3b9</color>
+
+    <color name="light_grey">#EAEAEA</color>
+    <color name="app_background_color">#F6F8FB</color>
+    <color name="app_main_color">#4FA540</color>
+    <color name="word_text_color">#DCDCDC</color>
+    <color name="list_header_background">#F1F1F1</color>
+    <color name="dark_orange">#277E32</color>
+
 
 
 </resources>
