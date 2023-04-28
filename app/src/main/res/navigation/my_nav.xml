@@ -10,7 +10,7 @@
     <include app:graph="@navigation/nest" />
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.android.cactus.homeScreen.presentation.fragment.HomeFragment"
+        android:name="com.example.android.cactus.presentation.fragment.HomeFragment"
         android:label="HomeFragment" >
 
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/grammarFragment"
-        android:name="com.example.android.cactus.grammarScreen.presentation.fragment.GrammarFragment"
+        android:name="com.example.android.cactus.presentation.fragment.GrammarFragment"
         android:label="GrammarFragment" >
         <action
             android:id="@+id/action_grammarFragment_to_futureLessionFragment2"
@@ -37,38 +37,43 @@
 
     <fragment
         android:id="@+id/tranlateFragment"
-        android:name="com.example.android.cactus.TranlateFragment"
+        android:name="com.example.android.cactus.presentation.fragment.TranlateFragment"
         android:label="fragment_tranlate"
         tools:layout="@layout/fragment_tranlate" />
     <fragment
         android:id="@+id/vocabularyNotebookFragment"
-        android:name="com.example.android.cactus.vocabularyNotebook.ui.category.VocabularyNotebookFragment"
+        android:name="com.example.android.cactus.presentation.ui.category.VocabularyNotebookFragment"
         android:label="VocabularyNotebookFragment" />
     <activity
         android:id="@+id/categoryActivity2"
-        android:name="com.example.android.cactus.vocabularyNotebook.ui.category.CategoryActivity"
+        android:name="com.example.android.cactus.presentation.ui.category.CategoryActivity"
         android:label="activity_category"
         tools:layout="@layout/activity_category" />
     <fragment
         android:id="@+id/futureLessionFragment2"
-        android:name="com.example.android.cactus.grammarScreen.presentation.fragment.FutureLessionFragment"
+        android:name="com.example.android.cactus.presentation.fragment.FutureLessionFragment"
         android:label="fragment_future_lession"
         tools:layout="@layout/fragment_future_lession" />
     <fragment
         android:id="@+id/pastLessionFragment2"
-        android:name="com.example.android.cactus.grammarScreen.presentation.fragment.PastLessionFragment"
+        android:name="com.example.android.cactus.presentation.fragment.PastLessionFragment"
         android:label="fragment_past_lession"
         tools:layout="@layout/fragment_past_lession" />
     <fragment
         android:id="@+id/personnalLessionFragment2"
-        android:name="com.example.android.cactus.grammarScreen.presentation.fragment.PersonnalLessionFragment"
+        android:name="com.example.android.cactus.presentation.fragment.PersonnalLessionFragment"
         android:label="fragment_personnal_lession"
         tools:layout="@layout/fragment_personnal_lession" />
     <fragment
         android:id="@+id/presentLessionFragment2"
-        android:name="com.example.android.cactus.grammarScreen.presentation.fragment.PresentLessionFragment"
+        android:name="com.example.android.cactus.presentation.fragment.PresentLessionFragment"
         android:label="fragment_present_lession"
         tools:layout="@layout/fragment_present_lession" />
+    <fragment
+        android:id="@+id/learnNumberFragment2"
+        android:name="com.example.android.cactus.presentation.fragment.LearnNumberFragment"
+        android:label="fragment_learn_number"
+        tools:layout="@layout/fragment_learn_number" />
 
 
 </navigation>

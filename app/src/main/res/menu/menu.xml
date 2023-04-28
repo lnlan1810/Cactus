@@ -16,11 +16,13 @@
         android:title="Grammar"
         app:showAsAction="always|withText"/>
 
+
     <item
-        android:id="@+id/categoryActivity2"
+        android:id="@+id/vocabularyNotebookFragment"
         android:icon="@drawable/ic_baseline_note_24"
-        android:title="Test"
+        android:title="Note"
         app:showAsAction="always|withText"/>
+
 
     <item
         android:id="@+id/tranlateFragment"
@@ -29,10 +31,9 @@
         app:showAsAction="always|withText"/>
 
     <item
-        android:id="@+id/vocabularyNotebookFragment"
-        android:icon="@drawable/ic_baseline_note_24"
-        android:title="Note"
+        android:id="@+id/learnNumberFragment2"
+        android:icon="@drawable/ic_baseline_g_translate_24"
+        android:title="thu"
         app:showAsAction="always|withText"/>
-
 
 </menu>

@@ -6,9 +6,8 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
-        android:name="com.example.android.cactus.vocabularyNotebook.VocApplication"
+        android:name="com.example.android.cactus.presentation.app.VocApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_dictionary"
         android:label="@string/app_name"
@@ -16,20 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VocabularyApp">
 
-        <activity android:name="com.example.android.cactus.vocabularyNotebook.ui.learn.LearnActivity" />
-        <activity android:name="com.example.android.cactus.vocabularyNotebook.ui.addWord.AddWordActivity" />
+        <activity android:name="com.example.android.cactus.presentation.ui.learn.LearnActivity" />
+        <activity android:name="com.example.android.cactus.presentation.ui.addWord.AddWordActivity" />
 
         <activity
-            android:name="com.example.android.cactus.vocabularyNotebook.ui.words.WordsActivity"
-            android:parentActivityName="com.example.android.cactus.vocabularyNotebook.ui.category.CategoryActivity"
+            android:name="com.example.android.cactus.presentation.ui.words.WordsActivity"
             />
 
-        <activity android:name="com.example.android.cactus.vocabularyNotebook.ui.category.CategoryActivity"
-            android:exported="true">
-        </activity>
-
         <activity
-            android:name="com.example.android.cactus.MainActivity"
+            android:name="com.example.android.cactus.presentation.activity.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,14 +32,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.cactus.vocabularyNotebook.VocApplication" />
+        <activity android:name="com.example.android.cactus.presentation.app.VocApplication" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
         <receiver
-            android:name="com.example.android.cactus.vocabularyNotebook.utils.MemoBroadcast"
+            android:name="com.example.android.cactus.domain.utils.MemoBroadcast"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -54,7 +48,7 @@
         </receiver>
 
         <service
-            android:name=".homeScreen.presentation.service.ConversationService"
+            android:name="com.example.android.cactus.presentation.service.ConversationService"
             android:enabled="true"
             android:exported="true">
         </service>

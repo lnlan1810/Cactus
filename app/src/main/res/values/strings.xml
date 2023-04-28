@@ -5,7 +5,7 @@
     <string name="basic">Basic lession</string>
     <string name="handwriting">Handwriting</string>
     <string name="num">Numbers</string>
-    <string name="day">Days and months</string>
+    <string name="day">Days</string>
     <string name="nouns">Nouns</string>
     <string name="verbs">Verbs</string>
     <string name="adj">Adjectives</string>
@@ -67,7 +67,7 @@
     <string name="novem">November</string>
     <string name="decem">December</string>
 
-    <string name="dayandmonths">Days and months</string>
+    <string name="dayandmonths">Days</string>
     <string name="handw">The Handwritten Russian Alphabet</string>
 
     <string name="notification_channel_title">First channel</string>

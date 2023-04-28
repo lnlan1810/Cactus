@@ -58,14 +58,14 @@
                 android:id="@+id/button_day"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:layout_below="@id/button_num"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/buttongreen"
                 android:fontFamily="@font/berlinlight"
                 android:text="@string/day"
                 android:textAllCaps="false"
-                android:textSize="24sp"
-                android:layout_height="50dp" />
+                android:textSize="24sp" />
 
 
         </RelativeLayout>

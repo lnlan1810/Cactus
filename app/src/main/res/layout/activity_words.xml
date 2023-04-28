@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F6F8FB"
-    tools:context=".vocabularyNotebook.ui.words.WordsActivity">
+    tools:context=".presentation.ui.words.WordsActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/words_toolbar"
@@ -21,7 +21,8 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
-        android:layout_height="161dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="430dp"
         android:layout_gravity="top"
         android:layout_marginStart="@dimen/margin_normal"
         android:layout_marginTop="70dp"

@@ -5,7 +5,7 @@
     android:id="@+id/category_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vocabularyNotebook.ui.category.CategoryActivity">
+    tools:context=".presentation.ui.category.CategoryActivity">
 
 
     <com.google.android.material.appbar.AppBarLayout
@@ -24,8 +24,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/category_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="620dp"
-        android:layout_marginTop="55dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="57dp"
         android:background="@color/white">
 
     </androidx.recyclerview.widget.RecyclerView>

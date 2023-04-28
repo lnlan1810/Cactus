@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     android:layout_marginEnd="15dp"
-    tools:context=".grammarScreen.presentation.fragment.PastLessionFragment">
+    tools:context=".presentation.fragment.PastLessionFragment">
 
     <Button
         android:id="@+id/buttonback"

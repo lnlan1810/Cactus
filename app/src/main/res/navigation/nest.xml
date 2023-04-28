@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/vocabularyNotebookFragment2"
-        android:name="com.example.android.cactus.vocabularyNotebook.ui.category.VocabularyNotebookFragment"
+        android:name="com.example.android.cactus.presentation.ui.category.VocabularyNotebookFragment"
         android:label="VocabularyNotebookFragment" >
         <action
             android:id="@+id/action_vocabularyNotebookFragment2_to_addCatDialog"
@@ -16,6 +16,6 @@
     </fragment>
     <dialog
         android:id="@+id/addCatDialog"
-        android:name="com.example.android.cactus.vocabularyNotebook.ui.addCategory.AddCatDialog"
+        android:name="com.example.android.cactus.presentation.ui.addCategory.AddCatDialog"
         android:label="AddCatDialog" />
 </navigation>

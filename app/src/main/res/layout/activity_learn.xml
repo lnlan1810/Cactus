@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F6F8FB"
-    tools:context=".vocabularyNotebook.ui.learn.LearnActivity">
+    tools:context=".presentation.ui.learn.LearnActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/learn_toolbar"
@@ -21,7 +21,7 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/learn_animation"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
         android:visibility="invisible"
@@ -35,8 +35,8 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/learn_card"
-        android:layout_width="0dp"
-        android:layout_height="266dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         android:layout_marginStart="@dimen/margin_normal"
         android:layout_marginEnd="@dimen/margin_normal"
         app:cardElevation="4dp"
@@ -83,17 +83,17 @@
 
     <ImageView
         android:id="@+id/learn_pronunciation"
-        android:layout_width="44dp"
-        android:layout_height="46dp"
+        android:layout_width="36dp"
+        android:layout_height="53dp"
         android:layout_marginBottom="269dp"
         android:background="#F6F8FB"
+        android:contentDescription="@string/speaker"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/learn_card"
-        app:srcCompat="@drawable/ic_baseline_volume"
-        android:contentDescription="@string/speaker" />
+        app:srcCompat="@drawable/ic_baseline_volume" />
 
     <ImageView
         android:id="@+id/learn_yes_btn"
