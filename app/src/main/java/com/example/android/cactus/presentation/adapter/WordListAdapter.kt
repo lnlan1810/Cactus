@@ -7,10 +7,11 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.cactus.databinding.WordListItemBinding
+import com.example.android.cactus.domain.model.Category
 import com.example.android.cactus.domain.model.Word
 
 class WordListAdapter(
-    private val wordList: ArrayList<Word> = ArrayList(),
+ //   private val wordList: ArrayList<Word> = ArrayList(),
     val clickListener: ItemClickListener
 ) : ListAdapter< Word, WordListAdapter.WordViewHolder>(WordDiffCallback()) {
 
@@ -25,12 +26,13 @@ class WordListAdapter(
         return WordViewHolder(itemBinding)
     }
 
-    override fun getItemCount(): Int {
+   /* override fun getItemCount(): Int {
         return wordList.size
-    }
+    }*/
 
     override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
-        holder.bind(wordList[position])
+      //  holder.bind(wordList[position])
+        holder.bind(getItem(position))
     }
 
     inner class WordViewHolder(private val itemBinding: WordListItemBinding) :
@@ -57,9 +59,13 @@ class WordListAdapter(
         }
     }
 
-    fun setData(list: List<Word>) {
+   /* fun setData(list: List<Word>) {
         wordList.clear()
         wordList.addAll(list)
         notifyDataSetChanged()
+    }*/
+
+    fun setData(list: List<Word>) {
+        submitList(list)
     }
 }

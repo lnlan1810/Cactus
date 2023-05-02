@@ -9,7 +9,7 @@ import com.example.android.cactus.databinding.CategoryListItemBinding
 import com.example.android.cactus.domain.model.Category
 
 class CategoryListAdapter(
-    private val categoryList: ArrayList<Category> = ArrayList(),
+    //private val categoryList: ArrayList<Category> = ArrayList(),
     val clickListener: ItemClickListener
 ) : ListAdapter<Category, CategoryListAdapter.CategoryViewHolder>(CategoryDiffCallback()) {
 
@@ -22,10 +22,10 @@ class CategoryListAdapter(
         return CategoryViewHolder(itemBinding)
     }
 
-    override fun getItemCount(): Int = categoryList.size
+   // override fun getItemCount(): Int = categoryList.size
 
     override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) =
-        holder.bind(categoryList[position])
+        holder.bind(getItem(position))
 
 
     inner class CategoryViewHolder(private val itemBinding: CategoryListItemBinding) :
@@ -47,7 +47,7 @@ class CategoryListAdapter(
         }
     }
 
-    fun setData(list: List<Category>) {
+    /*fun setData(list: List<Category>) {
         categoryList.clear()
         categoryList.addAll(list)
         notifyDataSetChanged()
@@ -56,5 +56,9 @@ class CategoryListAdapter(
     fun clear() {
         categoryList.clear()
         notifyDataSetChanged()
+    }*/
+
+    fun setData(list: List<Category>) {
+        submitList(list)
     }
 }

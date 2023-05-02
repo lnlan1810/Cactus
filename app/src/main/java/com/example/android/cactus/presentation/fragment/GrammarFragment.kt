@@ -18,23 +18,19 @@ class GrammarFragment : Fragment(R.layout.fragment_grammar) {
 
         with(binding){
             ivPresent.setOnClickListener{
-                val bundle = Bundle()
-                findNavController().navigate(R.id.action_grammarFragment_to_presentLessionFragment2, bundle)
+                findNavController().navigate(R.id.action_grammarFragment_to_presentLessionFragment2)
             }
 
             ivPerson.setOnClickListener{
-                val bundle = Bundle()
-                findNavController().navigate(R.id.action_grammarFragment_to_personnalLessionFragment2, bundle)
+                findNavController().navigate(R.id.action_grammarFragment_to_personnalLessionFragment2)
             }
 
             ivFuture.setOnClickListener{
-                val bundle = Bundle()
-                findNavController().navigate(R.id.action_grammarFragment_to_futureLessionFragment2, bundle)
+                findNavController().navigate(R.id.action_grammarFragment_to_futureLessionFragment2)
             }
 
             ivPast.setOnClickListener{
-                val bundle = Bundle()
-                findNavController().navigate(R.id.action_grammarFragment_to_pastLessionFragment2, bundle)
+                findNavController().navigate(R.id.action_grammarFragment_to_pastLessionFragment2)
             }
         }
     }

@@ -66,21 +66,22 @@ class NotificationService(
             context,
             0,
             previous,
-            0
+            PendingIntent.FLAG_IMMUTABLE
         )
 
         val pauseIntent = PendingIntent.getService(
             context,
             1,
             pause,
-            0
+            PendingIntent.FLAG_IMMUTABLE
+
         )
 
         val nextIntent = PendingIntent.getService(
             context,
             2,
             next,
-            0
+            PendingIntent.FLAG_IMMUTABLE
         )
         builder = NotificationCompat.Builder(context, CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_baseline_play_arrow_24)

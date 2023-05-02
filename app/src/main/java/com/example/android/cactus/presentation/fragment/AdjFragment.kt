@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide
 import com.example.android.cactus.R
 import com.example.android.cactus.databinding.FragmentAdjBinding
 import com.example.android.cactus.domain.repository.AdjRepository
+import com.example.android.cactus.domain.repository.WordRepository
 import com.example.android.cactus.presentation.adapter.WordAdapter
 
 class AdjFragment : Fragment(R.layout.fragment_adj) {
@@ -21,21 +22,30 @@ class AdjFragment : Fragment(R.layout.fragment_adj) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentAdjBinding.bind(view)
 
-        view.findViewById<Button>(R.id.buttonback).setOnClickListener {
-            activity?.onBackPressed()
+        with(binding) {
+            buttonback.setOnClickListener {
+                activity?.onBackPressed()
+            }
         }
         initAdapter()
     }
 
     private fun initAdapter() {
-        adjAdapter = WordAdapter(
+        /*adjAdapter = WordAdapter(
             AdjRepository.commonWords,
             Glide.with(this)
         ) {
+        }*/
+        adjAdapter = WordAdapter(Glide.with(this)) {
         }
 
         binding.rvWords.adapter = adjAdapter
         binding.rvWords.layoutManager = GridLayoutManager(requireContext(), 1)
 
+        // Tạo mới danh sách `List<HandWriting>`
+        val wordList = AdjRepository.commonWords.toList()
+
+        // Khởi tạo adapter với danh sách mới
+        adjAdapter!!.submitList(wordList)
     }
 }

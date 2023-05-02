@@ -13,7 +13,7 @@ class ConversationService : Service() {
     var currentPosition: Int = 0
     private var conversationBinder: ConversationBinder = ConversationBinder()
     private var conversations: List<Conversation> = ConversationRepository.conversations
-    private lateinit var notificationService: NotificationService
+    private var notificationService: NotificationService? = null
     inner class ConversationBinder: Binder(){
         //give service
         fun getService(): ConversationService = this@ConversationService
@@ -22,7 +22,7 @@ class ConversationService : Service() {
     override fun onCreate(){
         super.onCreate()
         notificationService = NotificationService(this)
-        notificationService.setNotification(currentPosition)
+        notificationService!!.setNotification(currentPosition)
     }
 
     override fun onBind(intent: Intent): IBinder = conversationBinder
@@ -75,7 +75,7 @@ class ConversationService : Service() {
         mediaPlayer = MediaPlayer.create(applicationContext, conversations[selectedConversationId].audio)
         currentPosition = selectedConversationId
         mediaPlayer.start()
-        notificationService.setNotification(selectedConversationId)
+        notificationService?.setNotification(selectedConversationId)
     }
 
 }

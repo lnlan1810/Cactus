@@ -11,9 +11,7 @@ class NumberHolder(private val binding: ItembuttomNumBinding,
         binding.run {
             buttonZero.text = number.num
 
-            root.setOnClickListener{
-                action(number)
-            }
+            buttonZero.setOnClickListener { action(number) }
         }
     }
 }

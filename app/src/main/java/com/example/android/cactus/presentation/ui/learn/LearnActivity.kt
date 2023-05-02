@@ -24,15 +24,16 @@ class LearnActivity : AppCompatActivity() {
     private val CATEGORY = "category_arg"
 
     private val viewModel by viewModel<LearnViewModel>()
-    private lateinit var binding: ActivityLearnBinding
-    private lateinit var textToSpeech: TextToSpeech
-    private lateinit var soundCorrect: MediaPlayer
-    private lateinit var soundCompleted: MediaPlayer
-    private lateinit var soundWrong: MediaPlayer
+    private var _binding: ActivityLearnBinding? = null
+    private  val binding get() = _binding!!
+    private var textToSpeech: TextToSpeech? = null
+    private var soundCorrect: MediaPlayer? = null
+    private var soundCompleted: MediaPlayer? = null
+    private var soundWrong: MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLearnBinding.inflate(layoutInflater)
+        _binding = ActivityLearnBinding.inflate(layoutInflater)
         lifecycle.addObserver(viewModel)
 
         initToolbar()
@@ -42,11 +43,11 @@ class LearnActivity : AppCompatActivity() {
         initTextToSpeech()
         initSoundEffects()
 
-        setContentView(binding.root)
+        setContentView(binding!!.root)
     }
 
     private fun initToolbar() {
-        setSupportActionBar(binding.learnToolbar)
+        setSupportActionBar(binding?.learnToolbar)
         supportActionBar?.apply {
             setDisplayShowTitleEnabled(false)
             setDisplayHomeAsUpEnabled(true)
@@ -79,7 +80,7 @@ class LearnActivity : AppCompatActivity() {
 
     private fun initOnClick() {
 
-        binding.apply {
+        binding?.apply {
             learnCard.setOnClickListener {
                 initFlipCardAnim()
                 viewModel.onCardClicked()
@@ -88,13 +89,13 @@ class LearnActivity : AppCompatActivity() {
             learnYesBtn.setOnClickListener {
                 viewModel.onYesClicked()
                 viewModel.getCurrentWord()
-                soundCorrect.start()
+                soundCorrect?.start()
             }
 
             learnNoBtn.setOnClickListener {
                 viewModel.onNoClicked()
                 viewModel.getCurrentWord()
-                soundWrong.start()
+                soundWrong?.start()
             }
 
             learnPronunciation.setOnClickListener {
@@ -104,8 +105,8 @@ class LearnActivity : AppCompatActivity() {
     }
 
     private fun initFlipCardAnim() {
-        val oa1 = ObjectAnimator.ofFloat(binding.learnCard, "scaleX", 1f, 0f)
-        val oa2 = ObjectAnimator.ofFloat(binding.learnCard, "scaleX", 0f, 1f).apply {
+        val oa1 = ObjectAnimator.ofFloat(binding?.learnCard , "scaleX", 1f, 0f)
+        val oa2 = ObjectAnimator.ofFloat(binding?.learnCard, "scaleX", 0f, 1f).apply {
             interpolator = AccelerateDecelerateInterpolator()
         }
 
@@ -130,7 +131,7 @@ class LearnActivity : AppCompatActivity() {
     private fun initTextToSpeech() {
         textToSpeech = TextToSpeech(this) { status ->
             if (status != TextToSpeech.ERROR) {
-                textToSpeech.language = Locale.UK
+                textToSpeech?.language = Locale("ru", "RU")
             }
         }
     }
@@ -148,7 +149,7 @@ class LearnActivity : AppCompatActivity() {
     }
 
     private fun showTranslationOrWord(showTranslationEvent: Boolean) {
-        binding.apply {
+        binding?.apply {
             if (showTranslationEvent) {
                 learnTranslation.visibility = View.VISIBLE
                 learnWord.visibility = View.INVISIBLE
@@ -164,14 +165,14 @@ class LearnActivity : AppCompatActivity() {
             if (sessionCompleted) {
                 viewModel.showSessionCompleteDone()
                 startSuccessAnim()
-                soundCompleted.start()
+                soundCompleted?.start()
             }
         })
     }
 
     private fun startSuccessAnim() {
 
-        binding.apply {
+        binding?.apply {
             learnAnimation.visibility = View.VISIBLE
             learnWord.visibility = View.INVISIBLE
             learnTranslation.visibility = View.INVISIBLE
@@ -184,24 +185,24 @@ class LearnActivity : AppCompatActivity() {
     }
 
     private fun speakWord() {
-        val wordToSpeech = binding.learnTranslation.text.toString()
-        textToSpeech.speak(wordToSpeech, TextToSpeech.QUEUE_FLUSH, null)
+        val wordToSpeech = binding?.learnTranslation?.text.toString()
+        textToSpeech?.speak(wordToSpeech, TextToSpeech.QUEUE_FLUSH, null)
     }
 
     private fun renderUI(word: Word) {
 
         binding.apply {
             with(word) {
-                learnWord.text = this.name
-                learnTranslation.text = this.translation
+                learnWord?.text = this.name
+                learnTranslation?.text = this.translation
             }
         }
     }
 
     override fun onPause() {
 
-        if (textToSpeech.isSpeaking) {
-            textToSpeech.stop()
+        if (textToSpeech?.isSpeaking == true) {
+            textToSpeech?.stop()
         }
 
         super.onPause()

@@ -34,7 +34,7 @@ class ConversationFragment : Fragment(R.layout.fragment_conversation) {
 
     private var binder: ConversationService.ConversationBinder? = null
     private var conversationService: ConversationService? = null
-    private lateinit var conversation: Conversation
+    private var conversation: Conversation? = null
 
     private val connection = object : ServiceConnection {
         override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
@@ -90,15 +90,17 @@ class ConversationFragment : Fragment(R.layout.fragment_conversation) {
         id?.let {
             conversation = ConversationRepository.conversations[id]
         }
-        tv_tema.text = conversation.tema
-        tv_text.text = conversation.text
+        tv_tema.text = conversation?.tema
+        tv_text.text = conversation?.text
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.buttonback).setOnClickListener {
-            activity?.onBackPressed()
+        with(binding) {
+            buttonback.setOnClickListener {
+                activity?.onBackPressed()
+            }
         }
 
         activity?.bindService(

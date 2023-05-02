@@ -16,7 +16,7 @@ class PersonnalLessionFragment : Fragment(R.layout.fragment_personnal_lession) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentPersonnalLessionBinding.bind(view)
 
-        view.findViewById<Button>(R.id.buttonback).setOnClickListener {
+        binding.buttonback.setOnClickListener {
             activity?.onBackPressed()
         }
 

@@ -28,7 +28,7 @@ class VocApplication : Application() {
         }
 
         createNotificationChannel()
-        setRepeatingNotification()
+       // setRepeatingNotification()
     }
 
     private fun createNotificationChannel() {
@@ -50,7 +50,7 @@ class VocApplication : Application() {
         }
     }
 
-    private fun setRepeatingNotification() {
+    /*private fun setRepeatingNotification() {
         val calendar = Calendar.getInstance()
 
         with(calendar) {
@@ -64,6 +64,7 @@ class VocApplication : Application() {
         }
 
         val intent = Intent(this, MemoBroadcast::class.java)
+
         val pendingIntent = PendingIntent.getBroadcast(
             applicationContext,
             0,
@@ -86,5 +87,5 @@ class VocApplication : Application() {
                 pendingIntent
             )
         }
-    }
+    }*/
 }

@@ -12,9 +12,9 @@ import com.example.android.cactus.homeScreen.findController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private var binding: ActivityMainBinding? = null
 
-    private lateinit var controller: NavController
+    private var controller: NavController? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         controller =
             (supportFragmentManager.findFragmentById(R.id.fragment) as NavHostFragment).navController
 
-        val bottomView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        bottomView.setupWithNavController(controller)
+        val bottomView = binding!!.bottomNavigationView
+        bottomView.setupWithNavController(controller!!)
 
         supportFragmentManager.beginTransaction()
     }

@@ -12,7 +12,7 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class AddWordActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityAddWordBinding
+    private var binding: ActivityAddWordBinding? = null
     private val viewModel by viewModel<AddWordViewModel>()
     private val CATEGORY = "category_arg"
     private val WORD = "word_arg"
@@ -28,11 +28,11 @@ class AddWordActivity : AppCompatActivity() {
         observeSelectedWord()
         observeInputData()
 
-        setContentView(binding.root)
+        setContentView(binding!!.root)
     }
 
     private fun initToolbar() {
-        setSupportActionBar(binding.addToolbar)
+        setSupportActionBar(binding?.addToolbar)
         supportActionBar?.apply {
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowTitleEnabled(false)
@@ -56,10 +56,10 @@ class AddWordActivity : AppCompatActivity() {
 
     private fun initOnClick() {
 
-        binding.addWordBtn.setOnClickListener {
+        binding?.addWordBtn?.setOnClickListener {
             viewModel.addOrUpdate(
-                name = binding.addWordName.text.toString(),
-                translation = binding.addWordTrans.text.toString()
+                name = binding!!.addWordName.text.toString(),
+                translation = binding!!.addWordTrans.text.toString()
             )
         }
     }
@@ -67,12 +67,14 @@ class AddWordActivity : AppCompatActivity() {
     private fun observeInputData() {
         viewModel.dataIsValid.observe(this, { dataIsValid ->
             if (!dataIsValid) {
-                Snackbar.make(
-                    binding.root,
-                    getString(R.string.input_invalid_error_message),
-                    Snackbar.LENGTH_SHORT
-                )
-                    .show()
+                binding?.let {
+                    Snackbar.make(
+                        it.root,
+                        getString(R.string.input_invalid_error_message),
+                        Snackbar.LENGTH_SHORT
+                    )
+                        .show()
+                }
             } else {
                 finish()
                 overridePendingTransition(R.anim.hold, R.anim.slide_out_bottom)
@@ -83,7 +85,7 @@ class AddWordActivity : AppCompatActivity() {
     private fun observeSelectedWord() {
         viewModel.word.observe(this, { word ->
             word?.let {
-                binding.apply {
+                binding?.apply {
                     addWordName.setText(word.name)
                     addWordTrans.setText(word.translation)
                 }

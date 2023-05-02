@@ -12,10 +12,6 @@
         android:id="@+id/homeFragment"
         android:name="com.example.android.cactus.presentation.fragment.HomeFragment"
         android:label="HomeFragment" >
-
-        <action
-            android:id="@+id/action_homeFragment_to_categoryActivity2"
-            app:destination="@id/categoryActivity2" />
     </fragment>
     <fragment
         android:id="@+id/grammarFragment"
@@ -44,11 +40,7 @@
         android:id="@+id/vocabularyNotebookFragment"
         android:name="com.example.android.cactus.presentation.ui.category.VocabularyNotebookFragment"
         android:label="VocabularyNotebookFragment" />
-    <activity
-        android:id="@+id/categoryActivity2"
-        android:name="com.example.android.cactus.presentation.ui.category.CategoryActivity"
-        android:label="activity_category"
-        tools:layout="@layout/activity_category" />
+
     <fragment
         android:id="@+id/futureLessionFragment2"
         android:name="com.example.android.cactus.presentation.fragment.FutureLessionFragment"
@@ -69,11 +61,5 @@
         android:name="com.example.android.cactus.presentation.fragment.PresentLessionFragment"
         android:label="fragment_present_lession"
         tools:layout="@layout/fragment_present_lession" />
-    <fragment
-        android:id="@+id/learnNumberFragment2"
-        android:name="com.example.android.cactus.presentation.fragment.LearnNumberFragment"
-        android:label="fragment_learn_number"
-        tools:layout="@layout/fragment_learn_number" />
-
 
 </navigation>

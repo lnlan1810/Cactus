@@ -28,7 +28,7 @@ class VocabularyNotebookFragment : Fragment(R.layout.fragment_vocabulary_noteboo
         private var _binding: FragmentVocabularyNotebookBinding? = null
         private val binding get() = _binding!!
         private var listAdapter: CategoryListAdapter? = null
-        private lateinit var catDialogFragment: DialogFragment
+        private var catDialogFragment: DialogFragment? = null
         private val CATEGORY = "category_arg"
 
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -73,7 +73,10 @@ class VocabularyNotebookFragment : Fragment(R.layout.fragment_vocabulary_noteboo
         }
 
         private  fun initRecyclerView(){
-            listAdapter = CategoryListAdapter(ArrayList(), this)
+         //   listAdapter = CategoryListAdapter(ArrayList(), this)
+            listAdapter = CategoryListAdapter(this).apply {
+                submitList(ArrayList<Category>()) // hoặc submitList(emptyList())
+            }
 
             with(binding){
                 categoryRecyclerview.apply{
@@ -90,12 +93,12 @@ class VocabularyNotebookFragment : Fragment(R.layout.fragment_vocabulary_noteboo
 
         private  fun observeCategories(){
             viewModel.categories.observe(viewLifecycleOwner, { categories ->
-                if (categories.isNullOrEmpty()){
+                /*if (categories.isNullOrEmpty()){
                     listAdapter?.clear()
                 } else{
                     listAdapter?.setData(categories)
-                }
-
+                }*/
+                listAdapter?.submitList(categories)
                 showOrHideImage(categories)
             })
         }

@@ -21,13 +21,15 @@ class HandwritingFragment : Fragment(R.layout.fragment_handwriting) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentHandwritingBinding.bind(view)
 
-        view.findViewById<Button>(R.id.buttonback).setOnClickListener {
-            activity?.onBackPressed()
+        with(binding) {
+            buttonback.setOnClickListener {
+                activity?.onBackPressed()
+            }
         }
         initAdapter()
     }
 
-    private fun initAdapter() {
+    /*private fun initAdapter() {
         adapter = HandWritingAdapter(
             HandwritingResponsitory.handWriting,
             Glide.with(this)
@@ -36,8 +38,21 @@ class HandwritingFragment : Fragment(R.layout.fragment_handwriting) {
         }
         binding.rvHandwriting.adapter = adapter
         binding.rvHandwriting.layoutManager = GridLayoutManager(requireContext(), 1)
-    }
+    }*/
 
+    private fun initAdapter() {
+        adapter = HandWritingAdapter(Glide.with(this)) {
+            // Xử lý sự kiện
+        }
+        binding.rvHandwriting.adapter = adapter
+        binding.rvHandwriting.layoutManager = GridLayoutManager(requireContext(), 1)
+
+        // Tạo mới danh sách `List<HandWriting>`
+        val handwritingList = HandwritingResponsitory.handWriting.toList()
+
+        // Khởi tạo adapter với danh sách mới
+        adapter!!.submitList(handwritingList)
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()

@@ -19,11 +19,11 @@ class DayFragment : Fragment(R.layout.fragment_day) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentDayBinding.bind(view)
 
-        view.findViewById<Button>(R.id.buttonback).setOnClickListener {
-            activity?.onBackPressed()
-        }
-
         with(binding){
+            buttonback.setOnClickListener {
+                activity?.onBackPressed()
+            }
+
             cardView4.setOnClickListener {
                 soundOn(WeekDay.MONDAY)
             }

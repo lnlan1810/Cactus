@@ -9,14 +9,13 @@ import com.example.android.cactus.databinding.FragmentFutureLessionBinding
 
 class FutureLessionFragment : Fragment(R.layout.fragment_future_lession) {
     private var _binding: FragmentFutureLessionBinding? = null
-
     private val binding get() = _binding!!
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentFutureLessionBinding.bind(view)
 
-        view.findViewById<Button>(R.id.buttonback).setOnClickListener {
+        binding.buttonback.setOnClickListener {
             activity?.onBackPressed()
         }
 

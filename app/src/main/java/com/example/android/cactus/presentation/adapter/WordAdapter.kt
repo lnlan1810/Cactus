@@ -8,7 +8,7 @@ import com.example.android.cactus.domain.model.CommonWord
 import com.example.android.cactus.presentation.holder.WordHolder
 
 class WordAdapter (
-    private val list: ArrayList<CommonWord>,
+   // private val list: ArrayList<CommonWord>,
     private  val glide: RequestManager,
     private val action: (Int) -> Unit
 ): ListAdapter<CommonWord, WordHolder>(WoDiffCallback()) {
@@ -18,10 +18,9 @@ class WordAdapter (
             : WordHolder = WordHolder.create(parent,glide, action)
 
     override fun onBindViewHolder(holder: WordHolder, position: Int) {
-        holder.bind(list[position])
+        holder.bind(getItem(position))
     }
-
-    override fun getItemCount(): Int = list.size
+    // override fun getItemCount(): Int = list.size
 
     class WoDiffCallback : DiffUtil.ItemCallback<CommonWord>() {
         override fun areItemsTheSame(oldItem: CommonWord, newItem: CommonWord): Boolean {

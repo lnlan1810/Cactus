@@ -16,7 +16,7 @@ class VocabTopicsFragment : Fragment(R.layout.fragment_vocab_topics) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentVocabTopicsBinding.bind(view)
 
-        view.findViewById<Button>(R.id.buttonback).setOnClickListener {
+        binding.buttonback.setOnClickListener {
             activity?.onBackPressed()
         }
     }

@@ -17,6 +17,7 @@ import com.example.android.cactus.R
 import com.example.android.cactus.databinding.ActivityWordsBinding
 import com.example.android.cactus.domain.model.Category
 import com.example.android.cactus.domain.model.Word
+import com.example.android.cactus.presentation.adapter.CategoryListAdapter
 import com.example.android.cactus.presentation.adapter.WordListAdapter
 import com.example.android.cactus.presentation.ui.addCategory.AddCatDialog
 import com.example.android.cactus.presentation.ui.addWord.AddWordActivity
@@ -30,19 +31,20 @@ import kotlin.collections.ArrayList
 class WordsActivity : AppCompatActivity(), WordListAdapter.ItemClickListener,
     AddCatDialog.CategoryDialogListener {
 
-    private lateinit var textToSpeech: TextToSpeech
-    private lateinit var binding: ActivityWordsBinding
+    private var textToSpeech: TextToSpeech? = null
+    private var _binding: ActivityWordsBinding? = null
+    private  val binding get() = _binding!!
     private val viewModel by viewModel<WordsViewModel>()
-    private lateinit var listAdapter: WordListAdapter
-    private lateinit var fragmentManager: FragmentManager
-    private lateinit var catDialogFragment: DialogFragment
-    private lateinit var recyclerView: RecyclerView
+    private var listAdapter: WordListAdapter? = null
+    private var fragmentManager: FragmentManager? = null
+    private var catDialogFragment: DialogFragment? = null
+    private var recyclerView: RecyclerView? = null
     private val CATEGORY = "category_arg"
     private val WORD = "word_arg"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityWordsBinding.inflate(layoutInflater)
+        _binding = ActivityWordsBinding.inflate(layoutInflater)
         lifecycle.addObserver(viewModel)
 
         initToolbar()
@@ -55,11 +57,11 @@ class WordsActivity : AppCompatActivity(), WordListAdapter.ItemClickListener,
         setRecyclerViewItemTouchListener()
         initTextToSpeech()
 
-        setContentView(binding.root)
+        setContentView(binding!!.root)
     }
 
     private fun initToolbar() {
-        setSupportActionBar(binding.wordsToolbar)
+        setSupportActionBar(binding?.wordsToolbar)
         supportActionBar?.apply {
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowTitleEnabled(false)
@@ -68,7 +70,7 @@ class WordsActivity : AppCompatActivity(), WordListAdapter.ItemClickListener,
 
     private fun observeCategory() {
         viewModel.category.observe(this, { category ->
-            binding.wordsCategory.text = category.name
+            binding?.wordsCategory?.text  = category.name
         })
     }
 
@@ -77,13 +79,13 @@ class WordsActivity : AppCompatActivity(), WordListAdapter.ItemClickListener,
 
         category?.run {
             viewModel.setSelectedCategory(this)
-            binding.wordsCategory.text = category.name
+            binding?.wordsCategory?.text  = category.name
         }
     }
 
     private fun initOnClick() {
 
-        binding.apply {
+        binding?.apply {
             wordsAddBtn.setOnClickListener {
                 viewModel.category.value?.let {
                     startAddWordActivity(category = it, null)
@@ -97,7 +99,7 @@ class WordsActivity : AppCompatActivity(), WordListAdapter.ItemClickListener,
             }
 
             wordsCatEdit.setOnClickListener {
-                showCatPopUp(binding.wordsCatEdit)
+                showCatPopUp(binding!!.wordsCatEdit)
             }
         }
     }
@@ -127,9 +129,12 @@ class WordsActivity : AppCompatActivity(), WordListAdapter.ItemClickListener,
     }
 
     private fun initRecyclerView() {
-        listAdapter = WordListAdapter(ArrayList(), this)
+       // listAdapter = WordListAdapter(ArrayList(), this)
+        listAdapter = WordListAdapter(this).apply {
+            submitList(ArrayList<Word>()) // hoặc submitList(emptyList())
+        }
 
-        recyclerView = binding.wordsRecyclerview.apply {
+        recyclerView = binding?.wordsRecyclerview?.apply {
             layoutManager = LinearLayoutManager(this.context)
             itemAnimator = DefaultItemAnimator()
             adapter = listAdapter
@@ -144,9 +149,9 @@ class WordsActivity : AppCompatActivity(), WordListAdapter.ItemClickListener,
     private fun observeWords() {
         viewModel.wordsOfCategory.observe(this, { words ->
             if (words.isNullOrEmpty()) {
-                binding.wordsAddImage.visibility = View.VISIBLE
-                binding.wordsAddText.visibility = View.VISIBLE
-                binding.wordsNumber.text = getString(R.string.zero_words)
+                binding?.wordsAddImage?.visibility = View.VISIBLE
+                        binding?.wordsAddText?.visibility = View.VISIBLE
+                binding?.wordsNumber?.text = getString(R.string.zero_words)
             } else {
                 renderUI(listItems = words)
             }
@@ -155,9 +160,9 @@ class WordsActivity : AppCompatActivity(), WordListAdapter.ItemClickListener,
 
     @SuppressLint("SetTextI18n")
     private fun renderUI(listItems: List<Word>) {
-        listAdapter.setData(listItems)
+        listAdapter?.setData(listItems)
 
-        binding.apply {
+        binding?.apply {
 
             wordsStartBtn.apply {
                 wordsStartBtn.visibility = View.VISIBLE
@@ -208,24 +213,24 @@ class WordsActivity : AppCompatActivity(), WordListAdapter.ItemClickListener,
     private fun initTextToSpeech() {
         textToSpeech = TextToSpeech(this) { status ->
             if (status != TextToSpeech.ERROR) {
-                textToSpeech.language = Locale.forLanguageTag("ru")
+                textToSpeech?.language = Locale.forLanguageTag("ru")
             }
         }
     }
 
     private fun speakWord(word: String) {
-        textToSpeech.speak(word, TextToSpeech.QUEUE_FLUSH, null)
+        textToSpeech?.speak(word, TextToSpeech.QUEUE_FLUSH, null)
     }
 
     override fun onDialogPositiveClick(name: String) {
 
         viewModel.updateCategory(name)
-        binding.wordsCategory.text = name
-        catDialogFragment.dismiss()
+        binding?.wordsCategory?.text = name
+        catDialogFragment?.dismiss()
     }
 
     private fun showRenameDialog() {
-        catDialogFragment.show(fragmentManager, getString(R.string.cat_dialog))
+        fragmentManager?.let { catDialogFragment?.show(it, getString(R.string.cat_dialog)) }
     }
 
     private fun setRecyclerViewItemTouchListener() {

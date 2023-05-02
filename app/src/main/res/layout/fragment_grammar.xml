@@ -10,7 +10,7 @@
         android:id="@+id/iv_present"
         android:layout_width="150dp"
         android:layout_height="99dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="52dp"
         android:adjustViewBounds="true"
         android:src="@drawable/present"
         app:layout_constraintEnd_toEndOf="parent"

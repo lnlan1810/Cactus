@@ -19,7 +19,7 @@ class ConverListFragment : Fragment() {
     private var _binding: FragmentConverListBinding? = null
     private val binding get() = _binding!!
 
-    private  var conversationAdapter: ConversatioAdapter? = null
+    private var conversationAdapter: ConversatioAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,13 +36,26 @@ class ConverListFragment : Fragment() {
         val decorator = DividerItemDecoration(requireContext(), RecyclerView.VERTICAL)
         val spacing = SpaceItemDecorator(requireContext())
 
-        conversationAdapter = ConversatioAdapter(ConversationRepository.conversations){
+       /* conversationAdapter = ConversatioAdapter(ConversationRepository.conversations){
             showSelectedConversation(it)
+        }*/
+
+        conversationAdapter = ConversatioAdapter({ selectedPosition ->
+            showSelectedConversation(selectedPosition)
+        }).apply {
+            submitList(ConversationRepository.conversations)
+        }
+
+        with(binding) {
+            buttonback.setOnClickListener {
+                activity?.onBackPressed()
+            }
         }
         binding.rvConver.run{
             adapter = conversationAdapter
             addItemDecoration(decorator)
             addItemDecoration(spacing)
+
         }
 
     }

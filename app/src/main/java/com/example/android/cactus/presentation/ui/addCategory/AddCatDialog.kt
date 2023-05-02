@@ -10,7 +10,7 @@ import com.example.android.cactus.databinding.DialogCategoryBinding
 class AddCatDialog : DialogFragment() {
 
     private  var listener: CategoryDialogListener? = null
-    private lateinit var binding: DialogCategoryBinding
+    private var binding: DialogCategoryBinding? = null
 
     interface CategoryDialogListener {
         fun onDialogPositiveClick(name: String)
@@ -23,14 +23,14 @@ class AddCatDialog : DialogFragment() {
 
             catAddBtn.setOnClickListener {
 
-                val categoryName = binding.catName.text.toString()
+                val categoryName = binding?.catName?.text.toString()
                 listener?.onDialogPositiveClick(categoryName)
                 dialog?.dismiss()
             }
         }
 
         val builder = AlertDialog.Builder(context).apply {
-            setView(binding.root)
+            setView(binding!!.root)
         }
 
         return builder.create()

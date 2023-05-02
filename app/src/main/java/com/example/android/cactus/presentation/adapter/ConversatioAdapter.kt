@@ -7,7 +7,7 @@ import com.example.android.cactus.domain.model.Conversation
 import com.example.android.cactus.presentation.holder.ConversationHolder
 
 class ConversatioAdapter (
-    private val list: ArrayList<Conversation>,
+  //  private val list: ArrayList<Conversation>,
     private val action: (Int) -> Unit
 ): ListAdapter<Conversation, ConversationHolder>(ConversationDiffCallback()) {
     override fun onCreateViewHolder(
@@ -16,10 +16,8 @@ class ConversatioAdapter (
             : ConversationHolder = ConversationHolder.create(parent, action)
 
     override fun onBindViewHolder(holder: ConversationHolder, position: Int) {
-        holder.bind(list[position])
+        holder.bind(getItem(position))
     }
-
-    override fun getItemCount(): Int = list.size
 
     class ConversationDiffCallback : DiffUtil.ItemCallback<Conversation>() {
         override fun areItemsTheSame(oldItem: Conversation, newItem: Conversation): Boolean {

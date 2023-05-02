@@ -89,5 +89,9 @@
     <fragment
         android:id="@+id/mainNumberFragment"
         android:name="com.example.android.cactus.presentation.fragment.MainNumberFragment"
-        android:label="MainNumberFragment" />
+        android:label="MainNumberFragment" >
+        <action
+            android:id="@+id/action_mainNumberFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
 </navigation>

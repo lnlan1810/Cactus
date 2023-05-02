@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -128,18 +128,19 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:paddingRight="10dp"
-                    android:paddingLeft="10dp"
                     android:layout_height="42dp"
                     android:layout_marginTop="22dp"
                     android:background="@drawable/buttongray"
                     android:clickable="false"
                     android:fontFamily="@font/berlinlight"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
                     android:text="@string/common"
                     android:textAllCaps="false"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/buttoncommon" />
+
                 <ImageView
                     android:id="@+id/buttoncommon"
                     android:layout_width="match_parent"
@@ -154,9 +155,9 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_marginStart="15dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:layout_weight="1">
 
                 <Button
@@ -225,4 +226,4 @@
             app:layout_constraintVertical_bias="0.312" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+</ScrollView>

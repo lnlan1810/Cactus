@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.android.cactus.R
 import com.example.android.cactus.databinding.FragmentNumberBinding
+import com.example.android.cactus.domain.model.Number
 import com.example.android.cactus.domain.repository.NumberRepository
 import com.example.android.cactus.presentation.adapter.NumberAdapter
 import com.example.android.cactus.presentation.ui.SpaceItemDecorator
@@ -22,15 +23,16 @@ class NumberFragment : Fragment(R.layout.fragment_number) {
         binding = FragmentNumberBinding.inflate(layoutInflater)
         binding?.run {
             val itemDecoration = SpaceItemDecorator(requireContext(), 16f)
-            adapter = NumberAdapter(
-                NumberRepository.numbers,
-            ) {
+
+            adapter = NumberAdapter() { number ->
                 parentFragmentManager.beginTransaction()
-                    .replace(R.id.left_fragment_container, NumberInfoFragment.newInstance(it.id))
+                    .replace(R.id.left_fragment_container, NumberInfoFragment.newInstance(number.id))
                     .addToBackStack(null)
                     .commit()
             }
-           // rvNum.layoutManager = LinearLayoutManager(context)
+            rvNum.adapter = adapter
+            val numberList: List<Number> = NumberRepository.numbers.toList()
+            adapter!!.submitList(numberList)
             rvNum.addItemDecoration(itemDecoration)
             rvNum.adapter =  AlphaInAnimationAdapter(adapter!!).apply {
                 setDuration(500)
@@ -65,4 +67,3 @@ class NumberFragment : Fragment(R.layout.fragment_number) {
         private const val ARG_NUMBER_ID = "number_id"
     }
 }
-
