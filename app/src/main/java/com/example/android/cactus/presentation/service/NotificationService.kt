@@ -47,20 +47,9 @@ class NotificationService(
             action = "PAUSE"
         }
 
-        //  val play = Intent(context, MusicService::class.java).apply {
-        //       action = "PLAY"
-        //  }
-
         val next = Intent(context, ConversationService::class.java).apply {
             action = "NEXT"
         }
-
-        //val playIntent = PendingIntent.getService(
-        //    context,
-        //    0,
-        //    play,
-        //    0
-        //)
 
         val prevIntent = PendingIntent.getService(
             context,

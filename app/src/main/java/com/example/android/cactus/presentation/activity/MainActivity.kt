@@ -10,7 +10,9 @@ import com.example.android.cactus.R
 import com.example.android.cactus.databinding.ActivityMainBinding
 import com.example.android.cactus.homeScreen.findController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private var binding: ActivityMainBinding? = null
 

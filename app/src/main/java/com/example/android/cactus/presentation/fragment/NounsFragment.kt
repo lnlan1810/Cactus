@@ -31,11 +31,6 @@ class NounsFragment : Fragment(R.layout.fragment_nouns) {
     }
 
     private fun initAdapter() {
-        /*musicAdapter = WordAdapter(
-            WordRepository.words,
-            Glide.with(this)
-        ) {
-        }*/
         wordAdapter = WordAdapter(Glide.with(this)) {
         }
         binding.rvWords.adapter = wordAdapter

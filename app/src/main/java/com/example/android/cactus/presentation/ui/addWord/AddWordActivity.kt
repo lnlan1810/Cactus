@@ -17,7 +17,6 @@ class AddWordActivity : AppCompatActivity() {
     private val CATEGORY = "category_arg"
     private val WORD = "word_arg"
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddWordBinding.inflate(layoutInflater)
@@ -27,7 +26,6 @@ class AddWordActivity : AppCompatActivity() {
         initOnClick()
         observeSelectedWord()
         observeInputData()
-
         setContentView(binding!!.root)
     }
 

@@ -11,11 +11,9 @@ class AddCatDialog : DialogFragment() {
 
     private  var listener: CategoryDialogListener? = null
     private var binding: DialogCategoryBinding? = null
-
     interface CategoryDialogListener {
         fun onDialogPositiveClick(name: String)
     }
-
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
 

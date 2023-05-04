@@ -10,10 +10,12 @@ import com.example.android.cactus.presentation.modules.dispatcherModule
 import com.example.android.cactus.presentation.modules.repositoryModule
 import com.example.android.cactus.presentation.modules.viewModelModule
 import com.example.android.cactus.domain.utils.MemoBroadcast
+import dagger.hilt.android.HiltAndroidApp
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import java.util.*
 
+@HiltAndroidApp
 class VocApplication : Application() {
 
     private val CHANNEL_ID = "mainChannelId"

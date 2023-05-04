@@ -26,14 +26,11 @@ class CategoryViewModel(
             repoCategory.getCategories()
         }
 
-
     fun addCategory(categoryDb: CategoryDb) =
         viewModelScope.launch(dispatchers.io) {
             repoCategory.addCategory(categoryDb)
         }
 
-
     fun searchDatabase(searchQuery: String): LiveData<List<CategoryDb>> =
         repoCategory.searchDatabase(searchQuery)
-
 }

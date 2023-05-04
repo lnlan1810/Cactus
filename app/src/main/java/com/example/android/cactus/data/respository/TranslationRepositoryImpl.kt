@@ -21,7 +21,7 @@ class TranslationRepositoryImpl  @Inject constructor(
         try {
             val translation = api.getSuggestTranslation(
                 "dict.1.1.20220319T172823Z.7a3d3eb2d6ee3add.eba6bf6188e808351b661edd0f0f3ca0649b0ad0",
-                "en-ru",
+                "ru-en",
                 word,
             )
 

@@ -35,7 +35,8 @@
         android:id="@+id/tranlateFragment"
         android:name="com.example.android.cactus.presentation.fragment.TranlateFragment"
         android:label="fragment_tranlate"
-        tools:layout="@layout/fragment_tranlate" />
+        tools:layout="@layout/fragment_tranlate" >
+    </fragment>
     <fragment
         android:id="@+id/vocabularyNotebookFragment"
         android:name="com.example.android.cactus.presentation.ui.category.VocabularyNotebookFragment"

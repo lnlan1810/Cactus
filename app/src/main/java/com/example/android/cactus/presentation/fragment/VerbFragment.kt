@@ -27,20 +27,13 @@ class VerbFragment : Fragment(R.layout.fragment_verb) {
     }
 
     private fun initAdapter() {
-       /* verbAdapter = WordAdapter(
-            VerbRepository.words,
-            Glide.with(this)
-        ) {
-        }*/
         verbAdapter = WordAdapter(Glide.with(this)) {
         }
 
         binding.rvWords.adapter = verbAdapter
         binding.rvWords.layoutManager = GridLayoutManager(requireContext(), 1)
-        // Tạo mới danh sách `List<HandWriting>`
         val wordList = VerbRepository.words.toList()
 
-        // Khởi tạo adapter với danh sách mới
         verbAdapter!!.submitList(wordList)
     }
 }

@@ -15,7 +15,6 @@ class AddWordViewModel(
     private val dispatchers: DispatcherProvider
 ) : ViewModel() {
 
-
     val word: LiveData<Word>
         get() = _word
 

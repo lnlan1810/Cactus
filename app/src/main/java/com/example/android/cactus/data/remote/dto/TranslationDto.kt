@@ -8,8 +8,7 @@ import com.google.gson.annotations.SerializedName
 @Keep
 data class TranslationDto(
     @SerializedName("def")
-    val def: List<Def>,
-    val head: Head
+    val def: List<Definition>,
 )
 {
     fun toEntity(): Translation {
