@@ -26,7 +26,6 @@
         android:text="hello"
         android:textSize="20sp"
         android:layout_marginStart="16dp"
-        android:textColor="@color/black"
         android:fontFamily="sans-serif-medium"
         app:layout_constraintBottom_toTopOf="@id/tv_text"
         app:layout_constraintStart_toEndOf="@+id/iv_picture"

@@ -92,6 +92,7 @@ fun TranslationDialog(
                                                 Text(
                                                     modifier = Modifier.padding(8.dp, 3.dp),
                                                     text = trans,
+                                                    color = Color(0xff000000),
                                                     /* color = if (!selectedTranslations.contains(trans))
                                                          MaterialTheme.colors.onBackground
                                                      else MaterialTheme.colors.onPrimary,*/

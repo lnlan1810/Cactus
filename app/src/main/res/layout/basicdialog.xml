@@ -25,7 +25,7 @@
                 android:id="@+id/icon"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:layout_marginTop="57dp"
+                android:layout_marginTop="55dp"
                 android:src="@drawable/ic_baseline_note_alt_24" />
 
             <Button
@@ -39,7 +39,7 @@
                 android:fontFamily="@font/berlinlight"
                 android:text="@string/handwriting"
                 android:textAllCaps="false"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
             <Button
                 android:id="@+id/button_num"
@@ -47,12 +47,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_below="@id/button_hand"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="22dp"
                 android:background="@drawable/buttongreen"
                 android:fontFamily="@font/berlinlight"
                 android:text="@string/num"
                 android:textAllCaps="false"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
             <Button
                 android:id="@+id/button_day"
@@ -60,12 +60,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_below="@id/button_num"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="22dp"
                 android:background="@drawable/buttongreen"
                 android:fontFamily="@font/berlinlight"
                 android:text="@string/day"
                 android:textAllCaps="false"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
 
         </RelativeLayout>
@@ -81,7 +81,7 @@
         android:fontFamily="@font/berlinlight"
         android:text="@string/basic"
         android:textAllCaps="false"
-        android:textSize="22sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="@+id/cardView3"
         app:layout_constraintHorizontal_bias="1.0"

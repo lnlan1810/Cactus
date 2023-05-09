@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Cactus</string>
+    <string name="languge">English</string>
+    <string name="english">English</string>
+    <string name="vietnamese">Vietnamese</string>
     <string name="learn">Learn Russian with Cactus!</string>
     <string name="slogan">Every cactus blooms</string>
     <string name="basic">Basic lession</string>
@@ -29,7 +32,7 @@
     <string name="ten">Ten</string>
     <string name="eleven">Eleven</string>
     <string name="twelve">Twelve</string>
-    <string name="thirtteen"> </string>
+    <string name="thirtteen">thirtteen </string>
     <string name="fourteen">Fourteen</string>
     <string name="fifteen">Fifteen</string>
     <string name="sixteen">Sixteen</string>
@@ -45,7 +48,6 @@
     <string name="eighty">Eighty</string>
     <string name="ninety">Ninety</string>
     <string name="onehundred">One hundred</string>
-
 
     <string name="monday">Monday</string>
     <string name="tuesday">Tuesday</string>
@@ -221,7 +223,6 @@ She was the only child in the family \n
  \n
 Они встáли и поздорóвались. \n
 They stood up and greeted.</string>
-
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

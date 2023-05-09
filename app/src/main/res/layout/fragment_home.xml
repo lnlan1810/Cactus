@@ -35,7 +35,6 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
             android:text="Cactus"
-            android:textColor="@color/black"
             android:textSize="26dp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -47,7 +46,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/slogan"
-            android:textColor="@color/black"
             app:layout_constraintStart_toEndOf="@+id/imageView4"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -73,7 +71,7 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/berlinsans"
             android:text="@string/learn"
-            android:textColor="@color/hijautua"
+            android:textColor="@color/dark_orange"
             android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.531"

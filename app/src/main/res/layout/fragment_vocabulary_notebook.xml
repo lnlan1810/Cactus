@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="634dp"
         android:layout_marginTop="55dp"
-        android:background="@color/white">
+       >
 
     </androidx.recyclerview.widget.RecyclerView>
 
@@ -39,7 +39,7 @@
         android:clickable="true"
         android:contentDescription="@string/add_button"
         android:focusable="true"
-        app:backgroundTint="@color/greenn"
+        app:backgroundTint="@color/colorClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:rippleColor="@color/white"

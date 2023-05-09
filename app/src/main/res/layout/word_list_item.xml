@@ -10,7 +10,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@color/light_grey"
         app:strokeWidth="0.3dp">
 
         <LinearLayout
@@ -32,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/textview"
-                    android:textColor="#000000" />
+                    />
 
                 <TextView
                     android:id="@+id/word_list_name"
@@ -41,7 +40,7 @@
                     android:layout_marginBottom="5dp"
                     android:layout_weight="1"
                     android:text="@string/textview"
-                    android:textColor="#81000000" />
+                   />
 
             </LinearLayout>
 
