@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nested"
+    app:startDestination="@id/homeFragment2">
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.android.cactus.presentation.fragment.HomeFragment"
+        android:label="HomeFragment" >
+
+        <action
+            android:id="@+id/action_homeFragment2_to_handwritingFragment3"
+            app:destination="@id/handwritingFragment3" />
+        <action
+            android:id="@+id/action_homeFragment2_to_numberFragment"
+            app:destination="@id/numberFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_dayFragment"
+            app:destination="@id/dayFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_nounsFragment2"
+            app:destination="@id/nounsFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_verbFragment"
+            app:destination="@id/verbFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_adjFragment"
+            app:destination="@id/adjFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_converListFragment"
+            app:destination="@id/converListFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_vocabTopicsFragment"
+            app:destination="@id/vocabTopicsFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_mainNumberFragment"
+            app:destination="@id/mainNumberFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/handwritingFragment3"
+        android:name="com.example.android.cactus.presentation.fragment.HandwritingFragment"
+        android:label="fragment_handwriting"
+        tools:layout="@layout/fragment_handwriting" />
+    <fragment
+        android:id="@+id/numberFragment"
+        android:name="com.example.android.cactus.presentation.fragment.NumberFragment"
+        android:label="fragment_number"
+        tools:layout="@layout/fragment_number" />
+    <fragment
+        android:id="@+id/dayFragment"
+        android:name="com.example.android.cactus.presentation.fragment.DayFragment"
+        android:label="DayFragment" />
+    <fragment
+        android:id="@+id/nounsFragment2"
+        android:name="com.example.android.cactus.presentation.fragment.NounsFragment"
+        android:label="NounsFragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/verbFragment"
+        android:name="com.example.android.cactus.presentation.fragment.VerbFragment"
+        android:label="VerbFragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/adjFragment"
+        android:name="com.example.android.cactus.presentation.fragment.AdjFragment"
+        android:label="AdjFragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/converListFragment"
+        android:name="com.example.android.cactus.presentation.fragment.ConverListFragment"
+        android:label="ConverListFragment" >
+        <action
+            android:id="@+id/action_converListFragment_to_conversationFragment"
+            app:destination="@id/conversationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/conversationFragment"
+        android:name="com.example.android.cactus.presentation.fragment.ConversationFragment"
+        android:label="ConversationFragment" />
+    <fragment
+        android:id="@+id/vocabTopicsFragment"
+        android:name="com.example.android.cactus.presentation.fragment.VocabTopicsFragment"
+        android:label="VocabTopicsFragment" />
+    <fragment
+        android:id="@+id/mainNumberFragment"
+        android:name="com.example.android.cactus.presentation.fragment.MainNumberFragment"
+        android:label="MainNumberFragment" >
+        <action
+            android:id="@+id/action_mainNumberFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+</navigation>

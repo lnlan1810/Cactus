@@ -1,3 +1,230 @@
 <resources>
     <string name="app_name">Cactus</string>
+    <string name="languge">English</string>
+    <string name="english">English</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="learn">Learn Russian with Cactus!</string>
+    <string name="slogan">Every cactus blooms</string>
+    <string name="basic">Basic lession</string>
+    <string name="handwriting">Handwriting</string>
+    <string name="num">Numbers</string>
+    <string name="day">Days</string>
+    <string name="nouns">Nouns</string>
+    <string name="verbs">Verbs</string>
+    <string name="adj">Adjectives</string>
+
+    <string name="rate">5 star rating</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="common">Common Words</string>
+    <string name="conver">Conversation</string>
+    <string name="voca">Vocabulary topics</string>
+
+    <string name="zero">Zero</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">four</string>
+    <string name="five">Five</string>
+    <string name="six">Six</string>
+    <string name="seven">Seven</string>
+    <string name="eight">Eight</string>
+    <string name="nine">Nine</string>
+    <string name="ten">Ten</string>
+    <string name="eleven">Eleven</string>
+    <string name="twelve">Twelve</string>
+    <string name="thirtteen">thirtteen </string>
+    <string name="fourteen">Fourteen</string>
+    <string name="fifteen">Fifteen</string>
+    <string name="sixteen">Sixteen</string>
+    <string name="seventeen">Seventeen</string>
+    <string name="eighteen">Eighteen</string>
+    <string name="nineteen">Nineteen</string>
+    <string name="twenty">Twenty</string>
+    <string name="thirty">Thirty</string>
+    <string name="forty">Forty</string>
+    <string name="fifty">Fifty</string>
+    <string name="sixty">Sixty</string>
+    <string name="seventy">Seventy</string>
+    <string name="eighty">Eighty</string>
+    <string name="ninety">Ninety</string>
+    <string name="onehundred">One hundred</string>
+
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="jan">January</string>
+    <string name="feb">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="novem">November</string>
+    <string name="decem">December</string>
+
+    <string name="dayandmonths">Days</string>
+    <string name="handw">The Handwritten Russian Alphabet</string>
+
+    <string name="notification_channel_title">First channel</string>
+    <string name="notification_channel_desc">my channel is the best because I wrote it</string>
+
+    <string name="dia1">Dialogue 1</string>
+    <string name="year">Year</string>
+    <string name="time">Time</string>
+    <string name="man">Man. person</string>
+    <string name="hand">Hand, arm</string>
+    <string name="big">Big</string>
+    <string name="samll">Small</string>
+    <string name="good">Good</string>
+    <string name="beautifu">Beautifu</string>
+    <string name="tobe">To be, have</string>
+    <string name="tosay">To say, speak</string>
+    <string name="beable">Be able</string>
+    <string name="say">To say, tell, speak</string>
+    <string name="dia2">Dialogue 2</string>
+    <string name="dia3">Dialogue 3</string>
+    <string name="dia4">Dialogue 4</string>
+    <string name="dia5">Dialogue 5</string>
+
+    <string name="error_dialog">\" must implement NoticeDialogListener\"</string>
+    <string name="input_invalid_error_message">Please fill out all fields</string>
+    <string name="category_arg">category_arg</string>
+    <string name="word_arg">word_arg</string>
+    <string name="zero_words">(0 /0)</string>
+    <string name="cat_dialog">CatDialog</string>
+    <string name="new_word">New word</string>
+    <string name="translation">Translation</string>
+    <string name="save">save</string>
+    <string name="add_button">add_button</string>
+    <string name="let_s_build_your_personal_dictionary">Let\'s build your personal dictionary</string>
+    <string name="textview">TextView</string>
+    <string name="flipcard">Flipcard</string>
+    <string name="speaker">speaker</string>
+    <string name="yes_button">yes button</string>
+    <string name="no_button">no button</string>
+    <string name="continue_learning">Continue Learning</string>
+    <string name="add_your_first_words">Add your first words!</string>
+    <string name="my_vocabulary">MY VOCABULARY</string>
+    <string name="_0">0</string>
+    <string name="basicc">Basic</string>
+    <string name="new_category">NEW CATEGORY</string>
+    <string name="e_g_food">e.g. Food</string>
+    <string name="delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="Notification_title">Practice makes perfect</string>
+    <string name="Notification_text">Take your next session!</string>
+    <string name="main_channel_id">mainChannelId</string>
+
+    <string name="grammer">Grammer</string>
+    <string name="present">Present tense</string>
+    <string name="future">Future tense</string>
+    <string name="past">Past tense</string>
+    <string name="personal">Personal pronouns</string>
+
+    <string name="intro">It worth to mention that Present tense in Russian equals to Present Simple, Present Continuous, Present Perfect Continuous in English. \n
+    for example:\n
+        Present Simple: I live in Moscow. \n
+        – Я живу в Москве \n
+        Present Continuous: I am going to Moscow. \n
+        – Я еду в Москву. \n
+        Present Perfect Continuous: I have been living in Moscow for 10 years already. \n
+        – Я живу в Москве уже 10 лет. \n
+
+    </string>
+    <string name="conjugation">Conjugation</string>
+    <string name="futurelession">Quite simply, the future tense in Russian corresponds to things happening in the future. \n
+        Like English, Russian has no true future tense, instead a future tense is formed by using grammatical constructions involving auxiliary words and present tense verbs (present tense: I am running, future tense: I will be running). \n
+        In Russian to form a future tense, you either use a perfective verb and conjugate it in the present. \n
+        \n
+        For example, "Я делаю (present tense conjugation of imperfective verb" refers to the present time ("I do/I am doing"), while "Я сделаю (present tense conjugation of perfective verb)" refers to a time in the future ("I will do"). \n
+        Or you use an auxiliary verb "быть" conjugated in the present together with the infinitve of an imperfective verb "Я буду делать (present tense conjugation of the verb "быть")" ("I will be doing")</string>
+    <string name="pastlession">So, how do we form the past tense? Let’s take the verb “говорить” (govorit’ – to talk) as an example. “Говорить” (govorit’) is the infinitive form. To form the past tense, we change the ending “–ть” into the suffix “–л”:
+
+говорить (govorit’) – говорил (govoril)
+
+You do the same thing with all verbs to create the past tense:
+
+читать (chitat’) – читал (chital) – to read
+
+плакать (plakat’) – плакал (plakal) – to cry
+
+сомневаться (somnevat’sya) – сомневался (somnevalsya) – to doubt
+
+
+Russian verbs change their endings depending on the gender of the subject they refer to.
+
+Он читал книгу. (Ya chital.) – He read a book.
+
+Она читала газету. (Ona chitala.) – She read a newspaper.
+
+Оно читало мои мысли. (Ono chitalo moi mysli.) – It read my thoughts.
+
+Они читали объявление. (Oni chitali ob’yavlenie.) – They read an announcement.
+
+As you can see, if the pronoun is masculine, there is no ending. If it’s feminine, the ending is “–а” (а), and when it’s neutral, the ending is “–о” (o). For the plural, the ending is –и (i).
+
+
+If the verb is reflexive, when the action is directed to the subject, for example, “I wash myself,” you also change “–ть” to “–л,” but keep the reflexive ending “–ся.”
+
+Улыбаться (ulybat’sya) – улыбался (ulybalsya) – to smile
+
+Смеяться (smeyat’sya) – смеялся (smeyalsya) – to laugh</string>
+    <string name="personnallession">Usage \n
+Pronouns are words that are used as substitutes for nouns. They do not name objects, their characteristics or quantity but only refer to them. There are nine types of pronouns in Russian.
+
+Let is take a look at the Russian personal pronouns. \n
+я (I) \n
+мы (we) \n
+ты (you - singular; thou*) \n
+вы (you - plural) \n
+он (he) \n
+онá (she) \n
+онó (it) \n
+они (they). \n
+*In Russian, as in many other languages, ты (thou) is used generally among people very familiar with each other, or by superiors to inferiors. \n
+ \n
+The Person \n
+As you may know, the first person grammar term refers to someone who is the author of the narration. Therefore я, мы are the first person pronouns; they refer to the speaker. \n
+ \n
+Я стал медленно взбираться на холм. \n
+I started to climb the hill slowly. \n
+(я refers to someone who is actually saying this sentence) \n
+ \n
+In addition, the pronoun мы refers to people who perform an action along with the speaker. \n
+ \n
+Мы все éли яблоки: и я, и Миша, и Толя, и Дима. \n
+We were all eating apples: I and Misha and Tolya and Dima. \n
+(мы refers to all people who were performing an action) \n
+ \n
+The second person describes someone who was addressed by the utterance. In other words, it is the person you are talking to. Therefore ты, вы are the second person pronouns; they refer to one or more people. \n
+ \n
+Лéна, ты тáк хорошó поёшь. \n
+Lena, you sing so well. \n
+(ты substitutes for Lena, the person being addressed) \n
+ \n
+Когдá вы пойдёте на пляж? \n
+When will you go to the beach? \n
+(вы substitutes for the people addressed) \n
+ \n
+The third person pronouns он, она, оно, они refer to the person or thing being talked about. \n
+ \n
+Он заинтересовáлся игрóй. \n
+He became interested in the game. \n
+
+Онá былá единственным ребёнком в семьé. \n
+She was the only child in the family \n
+ \n
+Они встáли и поздорóвались. \n
+They stood up and greeted.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

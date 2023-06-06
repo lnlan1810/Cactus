@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/learn_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F8FB"
+    tools:context=".presentation.ui.learn.LearnActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/learn_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background_color"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/learn_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/succeeded" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/learn_card"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176">
+
+        <TextView
+            android:id="@+id/learn_translation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="@string/textview"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/learn_word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="@string/textview"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/learn_flip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@drawable/ic_baseline_360_24"
+            android:contentDescription="@string/flipcard" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/learn_pronunciation"
+        android:layout_width="36dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="269dp"
+        android:background="#F6F8FB"
+        android:contentDescription="@string/speaker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learn_card"
+        app:srcCompat="@drawable/ic_baseline_volume" />
+
+    <ImageView
+        android:id="@+id/learn_yes_btn"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="197dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/learn_card"
+        app:layout_constraintStart_toEndOf="@+id/learn_pronunciation"
+        app:layout_constraintTop_toBottomOf="@+id/learn_card"
+        app:srcCompat="@drawable/ic_baseline_sentiment_very_satisfied_24"
+        android:contentDescription="@string/yes_button" />
+
+    <ImageView
+        android:id="@+id/learn_no_btn"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="197dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/learn_pronunciation"
+        app:layout_constraintStart_toStartOf="@+id/learn_card"
+        app:layout_constraintTop_toBottomOf="@+id/learn_card"
+        app:srcCompat="@drawable/ic_baseline_sentiment_very_dissatisfied_24"
+        android:contentDescription="@string/no_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

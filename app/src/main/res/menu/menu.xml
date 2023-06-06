@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        app:showAsAction="always|withText"
+        />
+
+    <item
+        android:id="@+id/grammarFragment"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="Grammar"
+        app:showAsAction="always|withText"/>
+
+
+    <item
+        android:id="@+id/vocabularyNotebookFragment"
+        android:icon="@drawable/ic_baseline_note_24"
+        android:title="Note"
+        app:showAsAction="always|withText"/>
+
+
+    <item
+        android:id="@+id/tranlateFragment"
+        android:icon="@drawable/ic_baseline_g_translate_24"
+        android:title="Translate"
+        app:showAsAction="always|withText"/>
+
+
+</menu>

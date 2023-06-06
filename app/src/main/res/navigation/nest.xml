@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nest"
+    app:startDestination="@id/vocabularyNotebookFragment2">
+
+
+    <fragment
+        android:id="@+id/vocabularyNotebookFragment2"
+        android:name="com.example.android.cactus.presentation.ui.category.VocabularyNotebookFragment"
+        android:label="VocabularyNotebookFragment" >
+        <action
+            android:id="@+id/action_vocabularyNotebookFragment2_to_addCatDialog"
+            app:destination="@id/addCatDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/addCatDialog"
+        android:name="com.example.android.cactus.presentation.ui.addCategory.AddCatDialog"
+        android:label="AddCatDialog" />
+</navigation>

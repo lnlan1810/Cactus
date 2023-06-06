@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cat_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@color/dark_orange"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center|start"
+            android:paddingStart="@dimen/padding_normal"
+            android:paddingEnd="@dimen/margin_normal"
+            android:text="@string/new_category"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/cat_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_very_small"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_very_small"
+            android:layout_marginBottom="@dimen/margin_very_small"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_medium"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/padding_normal" />
+
+        <Button
+            android:id="@+id/cat_add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/save"
+            android:textColor="#636363"
+            app:backgroundTint="@color/white" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

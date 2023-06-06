@@ -1,0 +1,230 @@
+<resources>
+    <string name="english">Tiếng Anh</string>
+    <string name="vietnamese">Việt Nam</string>
+    <string name="app_name">Cactus</string>
+    <string name="languge">Việt Nam</string>
+    <string name="learn">Học tiếng Nga cùng Cactus!</string>
+    <string name="slogan">mọi cây xương rồng đều nở hoa</string>
+    <string name="basic">Cơ bản</string>
+    <string name="handwriting">Viết tay</string>
+    <string name="num">Số</string>
+    <string name="day">Ngày</string>
+    <string name="nouns">Danh từ</string>
+    <string name="verbs">Động từ</string>
+    <string name="adj">tính từ</string>
+
+    <string name="rate">Dánh giá</string>
+    <string name="feedback">bình luận</string>
+
+    <string name="common">Từ thường gặp</string>
+    <string name="conver">Hội thoại</string>
+    <string name="voca">Chủ đề</string>
+
+    <string name="zero">Không</string>
+    <string name="one">Một</string>
+    <string name="two">Hai</string>
+    <string name="three">Ba</string>
+    <string name="five">Năm</string>
+    <string name="six">Sáu</string>
+    <string name="seven">Bảy</string>
+    <string name="eight">Tám</string>
+    <string name="nine">Chín</string>
+    <string name="ten">Mười</string>
+    <string name="eleven">Mười một</string>
+    <string name="twelve">Mười hai</string>
+    <string name="thirtteen">Mười ba </string>
+    <string name="fourteen">Mười bốn</string>
+    <string name="fifteen">Fifteen</string>
+    <string name="sixteen">Sixteen</string>
+    <string name="seventeen">Seventeen</string>
+    <string name="eighteen">Eighteen</string>
+    <string name="nineteen">Nineteen</string>
+    <string name="twenty">Twenty</string>
+    <string name="thirty">Thirty</string>
+    <string name="forty">Forty</string>
+    <string name="fifty">Fifty</string>
+    <string name="sixty">Sixty</string>
+    <string name="seventy">Seventy</string>
+    <string name="eighty">Eighty</string>
+    <string name="ninety">Ninety</string>
+    <string name="onehundred">One hundred</string>
+
+    <string name="monday">Thứ hai</string>
+    <string name="tuesday">Thứ ba</string>
+    <string name="wednesday">Thứ tư</string>
+    <string name="thursday">Thứ năm</string>
+    <string name="friday">Thứ sáu</string>
+    <string name="saturday">Thứ bảy</string>
+    <string name="sunday">Chủ nhật</string>
+    <string name="jan">January</string>
+    <string name="feb">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="novem">November</string>
+    <string name="decem">December</string>
+
+    <string name="dayandmonths">Ngày</string>
+    <string name="handw">Chữ cái viết tay</string>
+
+    <string name="notification_channel_title">First channel</string>
+    <string name="notification_channel_desc">my channel is the best because I wrote it</string>
+
+    <string name="dia1">Hội thoại 1</string>
+    <string name="year">Năm</string>
+    <string name="time">Thời gian</string>
+    <string name="man">Người</string>
+    <string name="hand">Tay</string>
+    <string name="big">Lớn</string>
+    <string name="samll">Nhỏ</string>
+    <string name="good">Tốt</string>
+    <string name="beautifu">Đẹp</string>
+    <string name="tobe">Có</string>
+    <string name="tosay">Nói</string>
+    <string name="beable">Có thể</string>
+    <string name="say">nói, kể</string>
+    <string name="dia2">Hội thoại 2</string>
+    <string name="dia3">Hội thoại 3</string>
+    <string name="dia4">Hội thoại 4</string>
+    <string name="dia5">Hội thoại 5</string>
+
+    <string name="error_dialog">\" must implement NoticeDialogListener\"</string>
+    <string name="input_invalid_error_message">Please fill out all fields</string>
+    <string name="category_arg">category_arg</string>
+    <string name="word_arg">word_arg</string>
+    <string name="zero_words">(0 /0)</string>
+    <string name="cat_dialog">CatDialog</string>
+    <string name="new_word">Từ mới</string>
+    <string name="translation">Dịch</string>
+    <string name="save">lưu</string>
+    <string name="add_button">add_button</string>
+    <string name="let_s_build_your_personal_dictionary">Let\'s build your personal dictionary</string>
+    <string name="textview">TextView</string>
+    <string name="flipcard">Flipcard</string>
+    <string name="speaker">speaker</string>
+    <string name="yes_button">yes button</string>
+    <string name="no_button">no button</string>
+    <string name="continue_learning">Tiếp tục học</string>
+    <string name="add_your_first_words">Thêm từ đầu tiên!</string>
+    <string name="my_vocabulary">Từ vựng của tôi</string>
+    <string name="_0">0</string>
+    <string name="basicc">Cơ bản</string>
+    <string name="new_category">DANH MỤC MỚI</string>
+    <string name="e_g_food">e.g. Food</string>
+    <string name="delete">Xóa</string>
+    <string name="rename">Đổi tên</string>
+    <string name="Notification_title">Tập luyện giúp hoàn hảo hơn</string>
+    <string name="Notification_text">Thực hiện phiên tiếp theo của bạn!</string>
+    <string name="main_channel_id">mainChannelId</string>
+
+    <string name="grammer">Ngữu pháp</string>
+    <string name="present">Thì hiện tại</string>
+    <string name="future">Thì tương lai</string>
+    <string name="past">Thì quá khứ</string>
+    <string name="personal">Đại từ nhân xưng</string>
+
+    <string name="intro">Điều đáng nói là thì Hiện tại trong tiếng Nga tương đương với Hiện tại đơn, Hiện tại tiếp diễn, Hiện tại hoàn thành tiếp diễn trong tiếng Anh. \N
+     ví dụ:\n
+         Hiện tại đơn: Tôi sống ở Moscow. \N
+         – Я живу в Москве \n
+         Hiện tại tiếp diễn: Tôi sẽ đến Moscow. \N
+         – Я еду в Москву. \N
+         Hiện tại hoàn thành tiếp diễn: Tôi đã sống ở Moscow được 10 năm rồi. \N
+         – Я живу в Москве уже 10 năm. \N
+
+    </string>
+    <string name="conjugation">liên hợp</string>
+    <string name="futurelession">Rất đơn giản, thì tương lai trong tiếng Nga tương ứng với những điều xảy ra trong tương lai. \N
+         Giống như tiếng Anh, tiếng Nga không có thì tương lai thực sự, thay vào đó, thì tương lai được hình thành bằng cách sử dụng các cấu trúc ngữ pháp liên quan đến trợ từ và động từ ở thì hiện tại (thì hiện tại: tôi đang chạy, thì tương lai: tôi sẽ chạy). \N
+         Trong tiếng Nga để hình thành thì tương lai, bạn có thể sử dụng động từ ở thể hoàn thành và chia động từ ở hiện tại. \N
+         \N
+         Ví dụ: "Я делаю (cách chia thì hiện tại của động từ không hoàn thành" đề cập đến thời điểm hiện tại ("Tôi làm/Tôi đang làm"), trong khi "Я сделаю (cách chia thì hiện tại của động từ hoàn thành)" đề cập đến một thời điểm trong tương lai ("Tôi sẽ làm"). \n
+         Hoặc bạn sử dụng trợ động từ "быть" được chia ở hiện tại cùng với động từ nguyên thể của động từ khiếm khuyết "Я буду делать (cách chia ở thì hiện tại của động từ "быть")" ("Tôi sẽ làm")</string>
+    <string name="pastlession">So, how do we form the past tense? Let’s take the verb “говорить” (govorit’ – to talk) as an example. “Говорить” (govorit’) is the infinitive form. To form the past tense, we change the ending “–ть” into the suffix “–л”:
+
+говорить (govorit’) – говорил (govoril)
+
+You do the same thing with all verbs to create the past tense:
+
+читать (chitat’) – читал (chital) – to read
+
+плакать (plakat’) – плакал (plakal) – to cry
+
+сомневаться (somnevat’sya) – сомневался (somnevalsya) – to doubt
+
+
+Russian verbs change their endings depending on the gender of the subject they refer to.
+
+Он читал книгу. (Ya chital.) – He read a book.
+
+Она читала газету. (Ona chitala.) – She read a newspaper.
+
+Оно читало мои мысли. (Ono chitalo moi mysli.) – It read my thoughts.
+
+Они читали объявление. (Oni chitali ob’yavlenie.) – They read an announcement.
+
+As you can see, if the pronoun is masculine, there is no ending. If it’s feminine, the ending is “–а” (а), and when it’s neutral, the ending is “–о” (o). For the plural, the ending is –и (i).
+
+
+If the verb is reflexive, when the action is directed to the subject, for example, “I wash myself,” you also change “–ть” to “–л,” but keep the reflexive ending “–ся.”
+
+Улыбаться (ulybat’sya) – улыбался (ulybalsya) – to smile
+
+Смеяться (smeyat’sya) – смеялся (smeyalsya) – to laugh</string>
+    <string name="personnallession">Cách sử dụng \n
+Đại từ là những từ được dùng thay thế cho danh từ. Họ không đặt tên cho các đối tượng, đặc điểm hoặc số lượng của chúng mà chỉ đề cập đến chúng. Có chín loại đại từ trong tiếng Nga.
+
+Chúng ta hãy xem các đại từ nhân xưng của Nga. \N
+я (tôi) \n
+мы (chúng tôi) \n
+ты (bạn - số ít; ngươi*) \n
+вы (bạn - số nhiều) \n
+он (anh ấy) \n
+онá (cô ấy) \n
+онó (nó) \n
+они (họ). \N
+*Trong tiếng Nga, cũng như trong nhiều ngôn ngữ khác, ты (ngươi) thường được sử dụng giữa những người rất thân quen với nhau, hoặc giữa cấp trên với cấp dưới. \N
+  \N
+Người \n
+Như bạn có thể biết, thuật ngữ ngữ pháp ngôi thứ nhất đề cập đến một người nào đó là tác giả của bài tường thuật. Do đó я, мы là đại từ ngôi thứ nhất; họ đề cập đến người nói. \N
+  \N
+Я стал медленно взбираться на холм. \N
+Tôi bắt đầu leo lên đồi một cách chậm rãi. \N
+(я ám chỉ ai đó đang thực sự nói câu này) \n
+  \N
+Ngoài ra, đại từ мы dùng để chỉ những người thực hiện một hành động cùng với người nói. \N
+  \N
+Мы все éли яблоки: и я, и Миша, и Толя, и Дима. \N
+Tất cả chúng tôi đang ăn táo: tôi, Misha, Tolya và Dima. \N
+(мы đề cập đến tất cả những người đang thực hiện một hành động) \n
+  \N
+Người thứ hai mô tả một người nào đó đã được giải quyết bằng cách nói. Nói cách khác, đó là người mà bạn đang nói chuyện. Do đó ты, вы là đại từ ngôi thứ hai; họ đề cập đến một hoặc nhiều người. \N
+  \N
+Vì vậy, ты тáк хорошó поёшь. \N
+Lena, bạn hát hay quá. \N
+(ты thay thế cho Lena, người được xưng hô) \n
+  \N
+Bạn có biết bạn đang ở đâu không? \N
+Khi nào bạn sẽ đi đến bãi biển? \N
+(вы thay thế cho những người được giải quyết) \n
+  \N
+Đại từ ngôi thứ ba он, она, оно, они chỉ người hoặc vật đang được nói đến. \N
+  \N
+Он заинтересовáлся игрóй. \N
+Anh bắt đầu quan tâm đến trò chơi. \N
+
+Онá былá единственным ребёнком в семьé. \N
+Cô ấy là con một trong gia đình \n
+  \N
+Они встáли и поздорóвались. \N
+Họ đứng dậy chào.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

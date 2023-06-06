@@ -1,27 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.cactus">
+    package="com.example.android.cactus">
+
+    <uses-permission android:name="com.example.cactus.BILLING" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name="com.example.android.cactus.presentation.app.VocApplication"
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_dictionary"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_dictionary_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Cactus"
-        tools:targetApi="31">
+        android:theme="@style/Theme.Cactus">
+
+        <activity android:name="com.example.android.cactus.presentation.ui.learn.LearnActivity" />
+        <activity android:name="com.example.android.cactus.presentation.ui.addWord.AddWordActivity" />
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name="com.example.android.cactus.presentation.ui.words.WordsActivity"
+            />
+
+        <activity
+            android:name="com.example.android.cactus.presentation.activity.MainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.example.android.cactus.presentation.app.VocApplication" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver
+            android:name="com.example.android.cactus.domain.utils.MemoBroadcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.example.android.cactus.presentation.service.ConversationService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
     </application>
 
 </manifest>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/nested">
+
+
+    <include app:graph="@navigation/nested" />
+    <include app:graph="@navigation/nest" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.android.cactus.presentation.fragment.HomeFragment"
+        android:label="HomeFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/grammarFragment"
+        android:name="com.example.android.cactus.presentation.fragment.GrammarFragment"
+        android:label="GrammarFragment" >
+        <action
+            android:id="@+id/action_grammarFragment_to_futureLessionFragment2"
+            app:destination="@id/futureLessionFragment2" />
+        <action
+            android:id="@+id/action_grammarFragment_to_pastLessionFragment2"
+            app:destination="@id/pastLessionFragment2" />
+        <action
+            android:id="@+id/action_grammarFragment_to_personnalLessionFragment2"
+            app:destination="@id/personnalLessionFragment2" />
+        <action
+            android:id="@+id/action_grammarFragment_to_presentLessionFragment2"
+            app:destination="@id/presentLessionFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tranlateFragment"
+        android:name="com.example.android.cactus.presentation.fragment.TranlateFragment"
+        android:label="fragment_tranlate"
+        tools:layout="@layout/fragment_tranlate" >
+    </fragment>
+    <fragment
+        android:id="@+id/vocabularyNotebookFragment"
+        android:name="com.example.android.cactus.presentation.ui.category.VocabularyNotebookFragment"
+        android:label="VocabularyNotebookFragment" />
+
+    <fragment
+        android:id="@+id/futureLessionFragment2"
+        android:name="com.example.android.cactus.presentation.fragment.FutureLessionFragment"
+        android:label="fragment_future_lession"
+        tools:layout="@layout/fragment_future_lession" />
+    <fragment
+        android:id="@+id/pastLessionFragment2"
+        android:name="com.example.android.cactus.presentation.fragment.PastLessionFragment"
+        android:label="fragment_past_lession"
+        tools:layout="@layout/fragment_past_lession" />
+    <fragment
+        android:id="@+id/personnalLessionFragment2"
+        android:name="com.example.android.cactus.presentation.fragment.PersonnalLessionFragment"
+        android:label="fragment_personnal_lession"
+        tools:layout="@layout/fragment_personnal_lession" />
+    <fragment
+        android:id="@+id/presentLessionFragment2"
+        android:name="com.example.android.cactus.presentation.fragment.PresentLessionFragment"
+        android:label="fragment_present_lession"
+        tools:layout="@layout/fragment_present_lession" />
+
+</navigation>

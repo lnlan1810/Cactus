@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Кактус</string>
+    <string name="languge">Английский</string>
+    <string name="english">английский</string>
+    <string name="vietnamese">вьетнамский</string>
+    <string name="learn">Учите русский с Cactus!</string>
+    <string name="slogan">Каждый кактус цветет</string>
+    <string name="basic">Базовый урок</string>
+    <string name="handwriting">Рукописный ввод</string>
+    <string name="num">Числа</string>
+    <string name="day">Дней</string>
+    <string name="nouns">Существительные</string>
+    <string name="verbs">Глаголы</string>
+    <string name="adj">Прилагательные</string>
+
+    <string name="rate">5-звездочный рейтинг</string>
+    <string name="feedback">Отзыв</string>
+
+    <string name="common">Общие слова</string>
+    <string name="conver">Разговор</string>
+    <string name="voca">Темы лексики</string>
+    <string name="zero">Ноль</string>
+    <string name="one">Один</string>
+    <string name="two">Два</string>
+    <string name="three">четыре</string>
+    <string name="five">Пять</string>
+    <string name="six">Шесть</string>
+    <string name="seven">Семь</string>
+    <string name="eight">Восемь</string>
+    <string name="nine">Девять</string>
+    <string name="ten">Десять</string>
+    <string name="eleven">Одиннадцать</string>
+    <string name="twelve">Двенадцать</string>
+    <string name="thirtteen">тринадцать </string>
+    <string name="fourteen">Четырнадцать</string>
+    <string name="fifteen">Пятнадцать</string>
+    <string name="sixteen">Шестнадцать</string>
+    <string name="seventeen">Семнадцать</string>
+    <string name="eighteen">Восемнадцать</string>
+    <string name="nineteen">Девятнадцать</string>
+    <string name="twenty">Двадцать</string>
+    <string name="thirty">Тридцать</string>
+    <string name="forty">Сорок</string>
+    <string name="fifty">Пятьдесят</string>
+    <string name="sixty">Шестьдесят</string>
+    <string name="seventy">Семьдесят</string>
+    <string name="eighty">Восемьдесят</string>
+    <string name="ninety">Девяносто</string>
+    <string name="onehundred">Сто</string>
+
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">четверг</string>
+    <string name="friday">пятница</string>
+    <string name="saturday">Суббота</string>
+    <string name="sunday">Воскресенье</string>
+    <string name="jan">Январь</string>
+    <string name="feb">Февраль</string>
+    <string name="march">март</string>
+    <string name="april">Апрель</string>
+    <string name="may">май</string>
+    <string name="june">июнь</string>
+    <string name="july">июль</string>
+    <string name="august">Август</string>
+    <string name="september">Сентябрь</string>
+    <string name="october">Октябрь</string>
+    <string name="novem">ноябрь</string>
+    <string name="decem">декабрь</string>
+    <string name="dayandmonths">Дни</string>
+    <string name="handw">Рукописный русский алфавит</string>
+
+    <string name="notification_channel_title">Первый канал</string>
+    <string name="notification_channel_desc">мой канал лучший, потому что я его написал</string>
+
+    <string name="dia1">Диалог 1</string>
+    <string name="year">Год</string>
+    <string name="time">Время</string>
+    <string name="man">Мужчина. человек</string>
+    <string name="hand">Рука, рука</string>
+    <string name="big">Большой</string>
+    <string name="samll">Маленький</string>
+    <string name="good">Хорошо</string>
+    <string name="beautifu">Красиво</string>
+    <string name="tobe">Быть, иметь</string>
+    <string name="tosay">Говорить, говорить</string>
+    <string name="beable">Уметь</string>
+    <string name="say">Сказать, сказать, сказать</string>
+    <string name="dia2">Диалог 2</string>
+    <string name="dia3">Диалог 3</string>
+    <string name="dia4">Диалог 4</string>
+    <string name="dia5">Диалог 5</string>
+
+    <string name="error_dialog">\" должен реализовывать NoticeDialogListener\"</string>
+    <string name="input_invalid_error_message">Пожалуйста, заполните все поля</string>
+    <string name="category_arg">category_arg</string>
+    <string name="word_arg">word_arg</string>
+    <string name="zero_words">(0/0)</string>
+    <string name="cat_dialog">CatDialog</string>
+    <string name="new_word">Новое слово</string>
+    <string name="translation">Перевод</string>
+    <string name="save">сохранить</string>
+    <string name="add_button">добавить_кнопку</string>
+    <string name="let_s_build_your_personal_dictionary">Давайте создадим ваш личный словарь</string>
+    <string name="textview">Текстовое представление</string>
+    <string name="flipcard">Флипкарта</string>
+    <string name="speaker">динамик</string>
+    <string name="yes_button">кнопка "да"</string>
+    <string name="no_button">без кнопки</string>
+    <string name="continue_learning">Продолжить обучение</string>
+    <string name="add_your_first_words">Добавьте свои первые слова!</string>
+    <string name="my_vocabulary">МОЙ СЛОВАРЬ</string>
+    <string name="_0">0</string>
+    <string name="basicc">Базовый</string>
+    <string name="new_category">НОВАЯ КАТЕГОРИЯ</string>
+    <string name="e_g_food">например. Еда</string>
+    <string name="delete">Удалить</string>
+    <string name="rename">Переименовать</string>
+    <string name="Notification_title">Практика делает совершенным</string>
+    <string name="Notification_text">Приступайте к следующему сеансу!</string>
+    <string name="main_channel_id">mainChannelId</string>
+    <string name="grammer">Граммер</string>
+    <string name="present">Настоящее время</string>
+    <string name="future">Будущее время</string>
+    <string name="past">Прошедшее время</string>
+    <string name="personal">Личные местоимения</string>
+
+    <string name="intro">Стоит отметить, что настоящее время в русском языке равнозначно Present Simple, Present Continuous, Present Perfect Continuous в английском языке. \n
+     например:\n
+         Настоящее простое время: Я живу в Москве. \n
+         – Я живу в Москве\n
+         Настоящее продолженное время: Я еду в Москву. \n
+         – Я еду в Москву. \n
+         Present Perfect Continuous: Я живу в Москве уже 10 лет. \n
+         – Я живу в Москве уже 10 лет. \n
+
+     </string>
+    <string name="conjugation">Спряжение</string>
+    <string name="futurelession">Проще говоря, будущее время в русском языке соответствует событиям, происходящим в будущем. \n
+         Как и в английском языке, в русском языке нет настоящего будущего времени, вместо этого будущее время образуется с помощью грамматических конструкций, включающих вспомогательные слова и глаголы настоящего времени (настоящее время: я бегу, будущее время: я буду работать). \n
+         В русском языке для образования будущего времени вы либо используете глагол совершенного вида, либо спрягаете его в настоящем. \n
+         \n
+         Например, «Я сделаю (спряжение глагола совершенного вида в настоящем времени» относится к настоящему времени («Я делаю/я делаю»), а «Я сделаю (спряжение глагола совершенного вида в настоящем времени)» относится к будущему времени. ("Я сделаю").\n
+         Или вы используете вспомогательный глагол «быть», спрягаемый в настоящем вместе с инфинитивом глагола несовершенного вида «Я буду делать (спряжение глагола «быть» в настоящем времени»)» («Я буду делать»)</string>
+    <string name="pastlession">Итак, как мы формируем прошедшее время? Возьмем в качестве примера глагол «говорить». «Говорить» — форма инфинитива. Чтобы образовать прошедшее время, мы меняем окончание «-ть» на суффикс «-л»:
+
+говорить (говорить) – говорил (говорил)
+
+Вы делаете то же самое со всеми глаголами, чтобы создать прошедшее время:
+
+читать (читать) – читал (читал) – читать
+
+плакать (plakat’) – плакал (plakal) – плакать
+
+сомневаться (сомневаться) – сомневался (сомневаться) – сомневаться
+
+
+Русские глаголы меняют свои окончания в зависимости от рода подлежащего, к которому они относятся.
+
+Он читал книгу. (Я читал.) – Он читал книгу.
+
+Она читала газету. (Она читала.) – Она читала газету.
+
+Оно прочитало мои мысли. (Оно читало мои мысли.) – Оно читало мои мысли.
+
+Они читали объявление. (Они читали объявление.) – Читают объявление.
+
+Как видите, если местоимение мужского рода, окончания нет. В женском роде окончание «–а» (а), в нейтральном — окончание «–о» (о). Во множественном числе окончание –и (i).
+
+
+Если глагол возвратный, то когда действие направлено на подлежащее, например, «я умываюсь», вы также меняете «–ть» на «–л», но сохраняете возвратное окончание «–ся».
+
+Улыбаться (улыбаться) – улыбаться (улыбаться) – улыбаться
+
+Смеяться (смеяться) – смеялся (смеялся) – смеяться</string>
+
+    <string name="personnallession">Использование\n
+Местоимения – это слова, которые используются вместо существительных. Они не называют предметы, их характеристики или количество, а только ссылаются на них. В русском языке девять типов местоимений.
+
+Давайте посмотрим на русские личные местоимения. \n
+я (я) \n
+мы (мы) \n
+ты (ты - единственное число; ты*) \n
+вы (ты - множественное число)\n
+он (он)\n
+она (она)\n
+оно (оно) \n
+они (они). \n
+* В русском языке, как и во многих других языках, ты (ты) обычно используется между людьми, хорошо знакомыми друг с другом, или начальством по отношению к низшему. \n
+  \n
+Человек\n
+Как вы, возможно, знаете, грамматический термин от первого лица относится к тому, кто является автором повествования. Поэтому я, мы - местоимения первого лица; они относятся к говорящему. \n
+  \n
+Я стал медленно взбираться на холм. \n
+Я начал медленно подниматься в гору. \n
+(я относится к тому, кто на самом деле произносит это предложение) \n
+  \n
+Кроме того, местоимение мы относится к людям, совершающим действие вместе с говорящим. \n
+  \n
+Мы все ели яблоки: и я, и Миша, и Толя, и Дима. \n
+Мы все ели яблоки: и я, и Миша, и Толя, и Дима. \n
+(мы относятся ко всем людям, выполнявшим действие) \n
+  \n
+Второй человек описывает кого-то, к кому было обращено высказывание. Другими словами, это человек, с которым вы разговариваете. Следовательно, ты, вы — местоимения второго лица; они относятся к одному или нескольким людям. \n
+  \n
+Лена, ты так хороша поёшь. \n
+Лена, ты так хорошо поешь. \n
+(ты заменяет Лену, человека, к которому обращаются) \n
+  \n
+Когда вы пойдёте на пляж? \n
+Когда ты пойдешь на пляж? \n
+(вы заменяет людей, к которым обращаются)\n
+  \n
+Местоимения третьего лица он, она, оно, они относятся к человеку или предмету, о котором идет речь. \n
+  \n
+Он заинтересовался играми. \n
+Он увлекся игрой. \n
+
+Она была ребёнком в семье. \n
+Она была единственным ребенком в семье\n
+  \n
+Они встали и поздоровались. \n
+Они встали и поздоровались.</string>
+
+    <!-- TODO: удалить или изменить этот текст-заполнитель -->
+    <string name="hello_blank_fragment">Привет, пустой фрагмент</string>
+</resources>
