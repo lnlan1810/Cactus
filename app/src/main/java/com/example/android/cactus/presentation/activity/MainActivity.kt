@@ -8,7 +8,6 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.android.cactus.R
 import com.example.android.cactus.databinding.ActivityMainBinding
-import com.example.android.cactus.homeScreen.findController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
