@@ -91,6 +91,11 @@
     <string name="dia3">Диалог 3</string>
     <string name="dia4">Диалог 4</string>
     <string name="dia5">Диалог 5</string>
+    <string name="dia6">Диалог 6</string>
+    <string name="dia7">Диалог 7</string>
+    <string name="dia8">Диалог 8</string>
+    <string name="dia9">Диалог 9</string>
+    <string name="dia10">Диалог 10</string>
 
     <string name="error_dialog">\" должен реализовывать NoticeDialogListener\"</string>
     <string name="input_invalid_error_message">Пожалуйста, заполните все поля</string>

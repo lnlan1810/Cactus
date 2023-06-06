@@ -92,6 +92,11 @@
     <string name="dia3">Hội thoại 3</string>
     <string name="dia4">Hội thoại 4</string>
     <string name="dia5">Hội thoại 5</string>
+    <string name="dia6">Hội thoại 6</string>
+    <string name="dia7">Hội thoại 7</string>
+    <string name="dia8">Hội thoại 8</string>
+    <string name="dia9">Hội thoại 9</string>
+    <string name="dia10">Hội thoại 10</string>
 
     <string name="error_dialog">\" must implement NoticeDialogListener\"</string>
     <string name="input_invalid_error_message">Please fill out all fields</string>

@@ -5,14 +5,12 @@ import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
 
+/*
 @Entity
 data class WordInfo(
    @PrimaryKey
     val id: Int = 0,
     @ColumnInfo(name = "term")
     var term: String = "",
-    @ColumnInfo(name = "definition")
-    var definition: String = "",
-   @ColumnInfo(name = "category")
-   var category: Int? = null
-)
+
+)*/

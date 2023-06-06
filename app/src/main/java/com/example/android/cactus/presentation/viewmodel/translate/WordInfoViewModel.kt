@@ -2,15 +2,11 @@ package com.example.android.cactus.presentation.viewmodel.translate
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
-import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.android.cactus.domain.common.Resource
-import com.example.android.cactus.domain.model.entity.Translation
-import com.example.android.cactus.domain.model.entity.WordInfo
 import com.example.android.cactus.domain.model.entity.WordTranslationState
 import com.example.android.cactus.domain.repository.TranslationRepository
-import com.example.android.cactus.domain.use_case.GetTranslationUseCase
 import com.example.android.cactus.domain.utils.UiEvent
 import com.example.android.cactus.presentation.translate.WordTranslateEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -26,15 +22,11 @@ class WordInfoViewModel @Inject constructor(
 ): ViewModel() {
 
     private val _eventFlow = MutableSharedFlow<UiEvent>()
-    val eventFlow = _eventFlow.asSharedFlow()
 
     var menuExpanded = mutableStateOf(false)
         private set
 
     var showTranslationDialog = mutableStateOf(false)
-        private set
-
-    var word: WordInfo? = null
         private set
 
     var newTerm = mutableStateOf("")
@@ -97,7 +89,6 @@ class WordInfoViewModel @Inject constructor(
                 searchJob?.cancel()
                 showTranslationDialog.value = false
             }
-            else -> {}
         }
     }
 
